@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<font color = white>
+
+<style>
+    .top_box {
+        border: 1px
+        width: 90%;
+        height: 70px;
+        background-color: #131921;
+        font color : white;
+        }
+    .bottom_box {
+        border: 1px
+        width: 90%;
+        height: 35px;
+        background-color: #232F3E;
+        font color : white;
+        }
+</style>
+
+<header>
+
+<!-- 헤더의 상단 -->
+<div class="top_box">
+
+    <!-- 로고 이미지 -->
+    <!-- 클릭하면 홈으로 이동하는 링크가 걸려있습니다 -->
+    <div class="logo" style="display: inline-block">
+            <a href="/" class="logo">
+                <img src="./images/logo.png" width=110, height=37 vspace=10 hspace=10 style="vertical-align:middle" alt="로고" style="display: inline-block">
+            </a>
+    </div>
+        
+    <!-- location 아이콘 -->
+    <img src="./images/location.png" width=33, height=36 style="vertical-align:middle" alt="위치">
+        
+    <!-- 배송할 지역 -->
+    <div class="delivery" style="display: inline-block">
+            <font size = 2>
+            Deliver to<br>
+            <b>Republic of Korea</b>
+            </font>
+    </div>
+
+    <!-- 검색창 -->
+    <div class="search" style=" margin:15px; display: inline-block">
+            <form  style="display: inline-block" size=5>
+                <select name = "things" style="width:42px">
+                  <option="none"> All </option>
+                  <option> All departments </option>
+                  <option> Arts & Crafts </option>
+                  <option> Automative </option>
+                  <option> Baby </option>
+                  <option> Beauty & Personal Care </option>
+                  <option> Books </option>
+                  <option> Computers </option>
+                  <option> Digital Music </option>
+                  <option> Electronics </option>
+                  <option> Kindle Store </option>
+                  <option> Prime Video </option>
+                  <option> Women's Fashion </option>
+                  <option> Men's Fashion </option>
+                  <option> Girl's Fashion </option>
+                  <option> Boy's Fashion </option>
+                  <option> Deals </option>
+                  <option> Health & Household </option>
+                  <option> Home & Kitchen</option>
+                  <option> Industrial & Scienticific </option>
+                  <option> Luggage </option>
+                  <option> Movies & TV </option>
+                  <option> Music, CDs & Vinyl </option>
+                  <option> Pet Supplies </option>
+                  <option> Software </option>
+                  <option> Sports & Outdoors </option>
+                  <option> Tools & Home Improvement </option>
+                  <option> Toys & Games </option>
+                  <option> Video Games </option>
+                </select>
+            </form>
+            <input type="text" size=85 style="font-size:12pt; color:black;">
+            <button>
+                <a>
+                    <img src="./images/search.png" style="vertical-align:middle" width=25px; height=25px; alt="검색 아이콘" style="display: inline-block">
+                </a>
+            </button>
+    </div>
+
+    <!-- 언어 -->
+    <div class="language" style=" display: inline-block">
+            <form  style="display: inline-block" size=5>
+                <a>
+                    <img src="./images/america.JPG" width=23, height=15 style="vertical-align:middle" alt="cart">
+                </a>
+                <select name = "language" style="width:20px">
+                <option type>Change Language</option>
+                <option type>English - EN</option>
+                <option> <hr width = "100%" color = "black" size = "3"></option>
+                <option type>Español - ES</option>
+                <option type>简体中文 - ZH</option>
+                <option type>Deutsch - DE</option>
+                <option type>Português - PT</option>
+                <option type>繁體中文 - ZH</option>
+                <option type>한국어 - KO</option>
+                <option type>עברית - HE</option>
+                <option type>اللغة العربية - AR</option>
+                <option> <hr width = "100%" color = "black" size = "3"></option>
+                <option type>Change currency Learn more</option>
+                <option> <hr width = "100%" color = "black" size = "3"></option>
+                <option type>$ - USD - U.S. DollarChange</option>
+                <option type>You are shopping on Amazon.com.</option>
+                <option type>Change country/region.</option>
+                </select>
+            </form>
+    </div>
+
+    <!-- 배송할 지역 -->
+    <div class="delivery" style="margin:5px; display: inline-block">
+        <font size = 2>
+        Hello, Sign in<br>
+        <form  style="display: inline-block" size=5>
+            <select name = "signIn" style="width:123px">
+            <option><b>Accounts & Lists</b></option>
+            </select>
+        </form>
+        </font>
+    </div>
+
+    <!-- 주문 -->
+    <div class="returnsAndOrders" style="margin:5px; display: inline-block">
+        <font size = 2 color="white">
+        Returns<br>
+        <b>& Orders</b>
+        </font>
+    </div>
+
+    <!-- 장바구니 -->
+    <div class="carts" style="margin:5px; display: inline-block">
+    <a>
+        <img src="./images/cart.JPG" width=40, height=40 style="vertical-align:middle" alt="cart">
+    </a>
+    <font size = 4>
+        <b>Cart</b><br>
+        </form>
+        </font>
+    </div>
+</div>
+
+<!-- 헤더의 하단 -->
+<div class="bottom_box">
+<font size = 3> &nbsp; 
+   <div style="display: inline-block">
+    <a><img src="./images/hamburger.JPG" width=25, height=25> </a>
+    All
+    </div> &nbsp; 
+
+   <div style="display: inline-block" OnClick="location.href ='https://www.amazon.com/international-sales-offers/b/?ie=UTF8&node=15529609011&ref_=nav_cs_gb_intl_52df97a2eee74206a8343034e85cd058'"> Today's Deals </div> &nbsp; 
+   <div style="display: inline-block" OnClick="location.href ='https://www.amazon.com/gp/help/customer/display.html?nodeId=508510&ref_=nav_cs_customerservice_2bf4fe8c5ec54e6bae2d1c24043f012b'"> Customer Service </div> &nbsp; 
+   <div style="display: inline-block" OnClick="location.href ='https://www.amazon.com/gift-cards/b/?ie=UTF8&node=2238192011&ref_=nav_cs_gc_4fb606b1a14b44e4823e00c03fc71f47'"> Gift Cards </div> &nbsp; 
+   <div style="display: inline-block" OnClick="location.href ='https://www.amazon.com/b/?_encoding=UTF8&ld=AZUSSOA-sell&node=12766669011&ref_=nav_cs_sell_9321d964d1ab428b8d83e204c043fc01'"> Sell </div> &nbsp; 
+   <div style="display: inline-block" OnClick="location.href ='https://www.amazon.com/registries?_encoding=UTF8&redirect=true&ref_=nav_cs_registry_1c421982e26d4ec48ca364be68f201b5'"
+   > Registry </div>
+</font>
+</div>
+
+</header>
+</font>
+</head>
+
+
+<body>
+    <!-- 배경음악 넣기 -->
+    <audio autoplay controls> <source src="./../../phone.mp3" type="audio/mp3"> </audio>
+    </body>
+
+</html>
