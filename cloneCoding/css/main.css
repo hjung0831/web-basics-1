@@ -1,0 +1,14 @@
+.top_box {
+    border: 1px
+    width: 90%;
+    height: 70px;
+    background-color: #131921;
+    font color : white;
+    }
+.bottom_box {
+    border: 1px
+    width: 90%;
+    height: 35px;
+    background-color: #232F3E;
+    font color : white;
+    }
