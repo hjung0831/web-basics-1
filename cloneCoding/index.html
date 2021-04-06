@@ -1,28 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Amazon </title>
+    <link rel="icon" href="favicon.ico" />
+</head>
+<html lang="en">
 <font color = white>
-
+<body>
+<!-- 헤더 스타일 지정 -->
 <style>
     .top_box {
-            border: 1px
-            width: 90%;
-            height: 70px;
-            background-color: #131921;
-            font color : white;
-            }
-    .bottom_box {
-            border: 1px
-            width: 90%;
-            height: 35px;
-            background-color: #232F3E;
-            font color : white;
-            }
+    border: 1px
+    width: 90%;
+    height: 70px;
+    background: #131921;
+    font color : white;
+    }
+.bottom_box {
+    border: 1px
+    width: 90%;
+    height: 35px;
+    background: #232F3E;
+    font color : white;
+    }
 </style>
-    
+
 <header>
 <!-- 헤더의 상단 -->
-<div class="top_box">
+<div id = "box">
+    <div class="top_box">
 
     <!-- 로고 이미지 -->
     <!-- 클릭하면 홈으로 이동하는 링크가 걸려있습니다 -->
@@ -33,7 +41,7 @@
     </div>
 
     <!-- location 아이콘 -->
-    <img src="./images/location.JPG" width=33, height=36 style="vertical-align:middle" alt="위치">
+    <img src="./images/location.JPG" width=25, height=36 style="vertical-align:middle" alt="위치">
 
     <!-- 배송할 지역 -->
     <div class="delivery" style="display: inline-block">
@@ -144,10 +152,12 @@
         </form>
         </font>
     </div>
+    </div>
 </div>
 
 <!-- 헤더의 하단 -->
-<div class="bottom_box">
+<div id = "box">
+    <div class="bottom_box">
 <font size = 3> &nbsp; 
    <div style="display: inline-block">
     <a><img src="./images/hamburger.JPG" width=25, height=25> </a>
@@ -161,16 +171,10 @@
    <div style="display: inline-block" OnClick="location.href ='https://www.amazon.com/registries?_encoding=UTF8&redirect=true&ref_=nav_cs_registry_1c421982e26d4ec48ca364be68f201b5'"
    > Registry </div>
 </font>
+    </div>
 </div>
 
 </header>
-</font>
-</head>
-
-
-<body>
-    <!-- 배경음악 넣기 -->
-    <audio autoplay controls> <source src="./../../phone.mp3" type="audio/mp3"> </audio>
 </body>
 
 </html>
