@@ -1,9 +1,8 @@
-//좌우슬라이딩
-setInterval(function(){
-    $('#slide1>ul').delay(2500);
-    $('#slide1>ul').animate({marginLeft: "-1200px"})
-    $('#slide1>ul').delay(2500);
-    $('#slide1>ul').animate({marginLeft: "-2400px"})
-    $('#slide1>ul').delay(2500);
-    $('#slide1>ul').animate({marginLeft: "0px"}
-) });
+// ※ 클래스명 myswiper 사용
+new Swiper('.myswiper', {
+
+	// 슬라이드 속도 설정
+	// 지정하지 않을시 기본값은 300
+	speed : 1000,
+
+});

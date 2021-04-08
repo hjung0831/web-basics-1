@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta charset="utf-8">
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <title> Amazon.com: Onlne Shopping </title>
     <link rel="icon" href="favicon.ico" />
 
@@ -52,14 +55,12 @@
 <!-- 헤더 스타일 지정 -->
 <style>
     .top_box {
-            border: 1px
             width: 100%;
             height: 63px;
             background-color: #131921;
             font color : white;
             }
     .bottom_box {
-            border: 1px
             width: 100%;
             height: 35px;
             background-color: #232F3E;
@@ -265,76 +266,48 @@
 </div>
 </header>
 
-<!-- SECTION 1, 8개의 사진이 나오는 부분 + 슬라이드 배경이 바뀌는 부분-->
-<div class="section">
-	<input type="radio" name="slide" id="slide01" checked>
-	<input type="radio" name="slide" id="slide02">
-	<input type="radio" name="slide" id="slide03">
-	<input type="radio" name="slide" id="slide04">
-	<input type="radio" name="slide" id="slide05">
-	<input type="radio" name="slide" id="slide06">
-	<div class="slidewrap">
-		<ul class="slidelist">
-			<li>
-				<a>
-					<img src="./images/slides/1.jpg">
-				</a>
-			</li>
-			<li>
-				<a>
-					<img src="./images/slides/2.jpg">
-				</a>
-			</li>
-			<li>
-				<a>
-					<img src="./images/slides/3.jpg">
-				</a>
-			</li>
-			<li>
-				<a>
-					<img src="./images/slides/4.jpg">
-				</a>
-			</li>
-			<li>
-				<a>
-					<img src="./images/slides/5.jpg">
-				</a>
-			</li>
-			<li>
-				<a>
-					<img src="./images/slides/6.jpg">
-				</a>
-			</li>
-		</ul>
+<body>
 
-		<div class="slide-control">
-			<div class="control01">
-				<label for="slide03" class="left"></label>
-				<label for="slide02" class="right"></label>
-			</div>
-			<div class="control02">
-				<label for="slide01" class="left"></label>
-				<label for="slide06" class="right"></label>
-			</div>
-			<div class="control03">
-				<label for="slide02" class="left"></label>
-				<label for="slide01" class="right"></label>
-			</div>
-			<div class="control04">
-				<label for="slide04" class="left"></label>
-				<label for="slide03" class="right"></label>
-			</div>
-			<div class="control05">
-				<label for="slide05" class="left"></label>
-				<label for="slide04" class="right"></label>
-			</div>
-			<div class="control06">
-				<label for="slide06" class="left"></label>
-				<label for="slide05" class="right"></label>
-            </div>
-		</div>
+<!-- SECTION 1, 8개의 사진이 나오는 부분 + 슬라이드 배경이 바뀌는 부분-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+
+<style type="text/css">
+
+.swiper-container {
+	align-items:center;
+    margin: 0 auto;
+	width: 1500px;;
+	height: 700px;
+	border: 0px;
+}
+
+</style>
+<!-- 스와이프 아이콘 -->
+<div class="swiper-container myswiper">
+	<div class="swipeSetting">
+		<a>
+			<img src="./images/swipe.png" width="500px" height="500px" left="2000px" top= "1000px" z-index:9999;>
+		</a>
+	</div>
+	<!-- 슬라이드 -->
+	<div class="swiper-wrapper">
+		<div class="swiper-slide"><img src="./images/slides/1.jpg"></div>
+		<div class="swiper-slide"><img src="./images/slides/2.jpg"></div>
+		<div class="swiper-slide"><img src="./images/slides/3.jpg"></div>
+		<div class="swiper-slide"><img src="./images/slides/4.jpg"></div>
+		<div class="swiper-slide"><img src="./images/slides/5.jpg"></div>
+        <div class="swiper-slide"><img src="./images/slides/6.jpg"></div>
 	</div>
 </div>
+
+<script>
+	new Swiper('.myswiper', {
+		speed : 1000,
+	});
+</script>
+	
+	
 
 <!-- SECTION 2, Discover Amazon-->
 
@@ -343,12 +316,6 @@
 <!-- SECTION 4, 4개의 사진이 나오는 부분-->
 
 <!-- FOOTER -->
-
-</font>
-</head>
-
-
-<body>
 </body>
-
+</font>
 </html>
