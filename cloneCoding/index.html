@@ -1,17 +1,70 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Amazon </title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title> Amazon.com: Onlne Shopping </title>
     <link rel="icon" href="favicon.ico" />
+
+	<style>
+	/* 브라우저 마진과 패딩 리셋 */
+	* {margin:0;padding:0;}
+
+	/* INPUT 가리기 */
+	.section [id*="slide"] {display:none;}
+	
+	/* 슬라이드 영역 - max-width 크기를 조절해주면 됩니다*/
+	.section .slidewrap {max-width:1200px;margin:0 auto;overflow:hidden;position:relative;}
+	.section .slidelist {white-space:nowrap;font-size:0;}
+	.section .slidelist > li {display:inline-block;vertical-align:middle;width:100%;transition:all .5s;}
+	.section .slidelist > li > a {display:block;position:relative;}
+
+	/* 좌우로 넘기는 LABEL버튼에 대한 스타일 */
+	.section .slide-control {position:absolute;top:0;left:0;z-index:10;width:100%;height:100%;}
+	.section .slide-control label {position:absolute;z-index:1;top:50%;transform:translateY(-50%);padding:50px;cursor:pointer;}
+	.section .slide-control .left {left:30px;background:url('./img/left.png') center center / 100% no-repeat;}
+	.section .slide-control .right {right:30px;background:url('./img/right.png') center center / 100% no-repeat;}
+	.section .slide-control [class*="control"] {display:none;}
+
+	/* INPUT이 체크되면 변화값이 li까지 전달되는 스타일 */
+	.section [id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}
+	.section [id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}
+	.section [id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}
+	.section [id="slide04"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-300%);}
+	.section [id="slide05"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-400%);}
+	.section [id="slide06"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-500%);}
+	
+	/*  INPUT이 체크되면 변화값이 좌우 슬라이드 버튼을 담고 있는 div 까지 전달되는 스타일 */
+	.section [id="slide01"]:checked ~ .slidewrap .control01 {display:block;}
+	.section [id="slide02"]:checked ~ .slidewrap .control02 {display:block;}
+	.section [id="slide03"]:checked ~ .slidewrap .control03 {display:block;}
+	.section [id="slide04"]:checked ~ .slidewrap .control03 {display:block;}
+	.section [id="slide05"]:checked ~ .slidewrap .control03 {display:block;}
+	.section [id="slide06"]:checked ~ .slidewrap .control03 {display:block;}
+	</style>
 </head>
 <html lang="en">
 <font color = white>
-<body>
+
+<body topmargin="0"  leftmargin="0" marginwidth="0" marginheight="0" bgcolor='#eaeded'>
+<link rel="stylesheet" href="./css/main.css">
 <!-- 헤더 스타일 지정 -->
 <style>
     .top_box {
+            border: 1px
+            width: 100%;
+            height: 63px;
+            background-color: #131921;
+            font color : white;
+            }
+    .bottom_box {
+            border: 1px
+            width: 100%;
+            height: 35px;
+            background-color: #232F3E;
+            font color : white;
+            }
     border: 1px
     width: 90%;
     height: 70px;
@@ -25,81 +78,117 @@
     background: #232F3E;
     font color : white;
     }
+
+	/* 브라우저 마진과 패딩 리셋 */
+	* {margin:0;padding:0;}
+
+	/* INPUT 가리기 */
+	.section [id*="slide"] {display:none;}
+	
+	/* 슬라이드 영역 - max-width 크기를 조절해주면 됩니다*/
+	.section .slidewrap {max-width:1200px;margin:0 auto;overflow:hidden;position:relative;}
+	.section .slidelist {white-space:nowrap;font-size:0;}
+	.section .slidelist > li {display:inline-block;vertical-align:middle;width:100%;transition:all .5s;}
+	.section .slidelist > li > a {display:block;position:relative;}
+
+	/* 좌우로 넘기는 LABEL버튼에 대한 스타일 */
+	.section .slide-control {position:absolute;top:0;left:0;z-index:10;width:100%;height:100%;}
+	.section .slide-control label {position:absolute;z-index:1;top:50%;transform:translateY(-50%);padding:50px;cursor:pointer;}
+	.section .slide-control .left {left:30px;background:url('./img/left.png') center center / 100% no-repeat;}
+	.section .slide-control .right {right:30px;background:url('./img/right.png') center center / 100% no-repeat;}
+	.section .slide-control [class*="control"] {display:none;}
+
+	/* INPUT이 체크되면 변화값이 li까지 전달되는 스타일 */
+	.section [id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}
+	.section [id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}
+	.section [id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}
+	
+	/*  INPUT이 체크되면 변화값이 좌우 슬라이드 버튼을 담고 있는 div 까지 전달되는 스타일 */
+	.section [id="slide01"]:checked ~ .slidewrap .control01 {display:block;}
+	.section [id="slide02"]:checked ~ .slidewrap .control02 {display:block;}
+	.section [id="slide03"]:checked ~ .slidewrap .control03 {display:block;}
 </style>
 
+<!-- HEADER -->
 <header>
 <!-- 헤더의 상단 -->
-<div id = "box">
+<div id="box">
     <div class="top_box">
 
     <!-- 로고 이미지 -->
     <!-- 클릭하면 홈으로 이동하는 링크가 걸려있습니다 -->
     <div class="logo" style="display: inline-block">
             <a href="/" class="logo">
-                <img src="./images/logo.JPG" width=110, height=37 vspace=10 hspace=10 style="vertical-align:middle" alt="로고" style="display: inline-block">
+                <img src="./images/logo.JPG" width=110, height=46 vspace=10 hspace=10 style="vertical-align:middle" alt="로고" style="display: inline-block">
             </a>
     </div>
 
     <!-- location 아이콘 -->
-    <img src="./images/location.JPG" width=25, height=36 style="vertical-align:middle" alt="위치">
+    <div class="location" style="display: inline-block">
+        <img src="./images/location.JPG" width=22, height=30 style="vertical-align:middle" alt="위치">
+        </div>
+    
 
-    <!-- 배송할 지역 -->
+    <!-- 배송 글씨 -->
     <div class="delivery" style="display: inline-block">
-            <font size = 2>
+        <font size = 2>
             Deliver to<br>
             <b>Republic of Korea</b>
-            </font>
+        </font>
     </div>
 
     <!-- 검색창 -->
     <div class="search" style=" margin:15px; display: inline-block">
-            <form  style="display: inline-block" size=5>
-                <select name = "things" style="width:42px">
-                  <option="none"> All </option>
-                  <option> All departments </option>
-                  <option> Arts & Crafts </option>
-                  <option> Automative </option>
-                  <option> Baby </option>
-                  <option> Beauty & Personal Care </option>
-                  <option> Books </option>
-                  <option> Computers </option>
-                  <option> Digital Music </option>
-                  <option> Electronics </option>
-                  <option> Kindle Store </option>
-                  <option> Prime Video </option>
-                  <option> Women's Fashion </option>
-                  <option> Men's Fashion </option>
-                  <option> Girl's Fashion </option>
-                  <option> Boy's Fashion </option>
-                  <option> Deals </option>
-                  <option> Health & Household </option>
-                  <option> Home & Kitchen</option>
-                  <option> Industrial & Scienticific </option>
-                  <option> Luggage </option>
-                  <option> Movies & TV </option>
-                  <option> Music, CDs & Vinyl </option>
-                  <option> Pet Supplies </option>
-                  <option> Software </option>
-                  <option> Sports & Outdoors </option>
-                  <option> Tools & Home Improvement </option>
-                  <option> Toys & Games </option>
-                  <option> Video Games </option>
-                </select>
-            </form>
-            <input type="text" size=85 style="font-size:12pt; color:black;">
-            <button>
-                <a>
-                    <img src="./images/search.JPG" style="vertical-align:middle" width=25px; height=25px; alt="검색 아이콘" style="display: inline-block">
-                </a>
-            </button>
+        <form style="display: inline-block" size=5>
+            <select name = "things" style="width:42px">
+              <option="none"> All </option>
+              <option> All departments </option>
+              <option> Arts & Crafts </option>
+              <option> Automative </option>
+              <option> Baby </option>
+              <option> Beauty & Personal Care </option>
+              <option> Books </option>
+              <option> Computers </option>
+              <option> Digital Music </option>
+              <option> Electronics </option>
+              <option> Kindle Store </option>
+              <option> Prime Video </option>
+              <option> Women's Fashion </option>
+              <option> Men's Fashion </option>
+              <option> Girl's Fashion </option>
+              <option> Boy's Fashion </option>
+              <option> Deals </option>
+              <option> Health & Household </option>
+              <option> Home & Kitchen</option>
+              <option> Industrial & Scienticific </option>
+              <option> Luggage </option>
+              <option> Movies & TV </option>
+              <option> Music, CDs & Vinyl </option>
+              <option> Pet Supplies </option>
+              <option> Software </option>
+              <option> Sports & Outdoors </option>
+              <option> Tools & Home Improvement </option>
+              <option> Toys & Games </option>
+              <option> Video Games </option>
+            </select>
+        </form>
+        <input type="text" size=85 style="font-size:12pt; color:black;">
+        <button>
+            <a>
+                <img src="./images/search.JPG" style="vertical-align:middle" width=25px; height=25px; alt="검색 아이콘" style="display: inline-block">
+            </a>
+        </button>
+    
     </div>
 
     <!-- 언어 -->
-    <div class="language" style=" display: inline-block">
+    <div class="language" style=" display: inline-block" >
             <form  style="display: inline-block" size=5>
+                <div style=" display: inline-block" position:fixed;left:300;>
                 <a>
                     <img src="./images/language.JPG" width=23, height=15 style="vertical-align:middle" alt="cart">
                 </a>
+                </div>
                 <select name = "language" style="width:20px">
                 <option type>Change Language</option>
                 <option type>English - EN</option>
@@ -123,7 +212,7 @@
     </div>
 
     <!-- 배송할 지역 -->
-    <div class="delivery" style="margin:5px; display: inline-block">
+    <div class="whereto" style="margin:5px; display: inline-block">
         <font size = 2>
         Hello, Sign in<br>
         <form  style="display: inline-block" size=5>
@@ -143,7 +232,7 @@
     </div>
 
     <!-- 장바구니 -->
-    <div class="carts" style="margin:5px; display: inline-block">
+    <div class="carts" style="margin: 5px; display: inline-block">
     <a>
         <img src="./images/cart.JPG" width=40, height=40 style="vertical-align:middle" alt="cart">
     </a>
@@ -152,29 +241,114 @@
         </form>
         </font>
     </div>
-    </div>
 </div>
 
 <!-- 헤더의 하단 -->
 <div id = "box">
     <div class="bottom_box">
 <font size = 3> &nbsp; 
-   <div style="display: inline-block">
-    <a><img src="./images/hamburger.JPG" width=25, height=25> </a>
-    All
-    </div> &nbsp; 
-
-   <div style="display: inline-block" OnClick="location.href ='https://www.amazon.com/international-sales-offers/b/?ie=UTF8&node=15529609011&ref_=nav_cs_gb_intl_52df97a2eee74206a8343034e85cd058'"> Today's Deals </div> &nbsp; 
-   <div style="display: inline-block" OnClick="location.href ='https://www.amazon.com/gp/help/customer/display.html?nodeId=508510&ref_=nav_cs_customerservice_2bf4fe8c5ec54e6bae2d1c24043f012b'"> Customer Service </div> &nbsp; 
-   <div style="display: inline-block" OnClick="location.href ='https://www.amazon.com/gift-cards/b/?ie=UTF8&node=2238192011&ref_=nav_cs_gc_4fb606b1a14b44e4823e00c03fc71f47'"> Gift Cards </div> &nbsp; 
-   <div style="display: inline-block" OnClick="location.href ='https://www.amazon.com/b/?_encoding=UTF8&ld=AZUSSOA-sell&node=12766669011&ref_=nav_cs_sell_9321d964d1ab428b8d83e204c043fc01'"> Sell </div> &nbsp; 
-   <div style="display: inline-block" OnClick="location.href ='https://www.amazon.com/registries?_encoding=UTF8&redirect=true&ref_=nav_cs_registry_1c421982e26d4ec48ca364be68f201b5'"
-   > Registry </div>
+    <div style="display: inline-block">
+        <a><img src="./images/hamburger.JPG" width=25, height=25> </a>
+        All
+        </div> &nbsp; 
+       <div style="display: inline-block" OnClick="location.href ='https://www.amazon.com/international-sales-offers/b/?ie=UTF8&node=15529609011&ref_=nav_cs_gb_intl_52df97a2eee74206a8343034e85cd058'"> Today's Deals </div> &nbsp; 
+       <div style="display: inline-block" OnClick="location.href ='https://www.amazon.com/gp/help/customer/display.html?nodeId=508510&ref_=nav_cs_customerservice_2bf4fe8c5ec54e6bae2d1c24043f012b'"> Customer Service </div> &nbsp; 
+       <div style="display: inline-block" OnClick="location.href ='https://www.amazon.com/gift-cards/b/?ie=UTF8&node=2238192011&ref_=nav_cs_gc_4fb606b1a14b44e4823e00c03fc71f47'"> Gift Cards </div> &nbsp; 
+       <div style="display: inline-block" OnClick="location.href ='https://www.amazon.com/b/?_encoding=UTF8&ld=AZUSSOA-sell&node=12766669011&ref_=nav_cs_sell_9321d964d1ab428b8d83e204c043fc01'"> Sell </div> &nbsp; 
+       <div style="display: inline-block" OnClick="location.href ='https://www.amazon.com/registries?_encoding=UTF8&redirect=true&ref_=nav_cs_registry_1c421982e26d4ec48ca364be68f201b5'"
+       > Registry</div>
+       <nav>
+        <div id ="rightalign" style="display: inline-block" OnClick="location.href ='https://www.aboutamazon.com/company-news/amazons-actions-to-help-employees-communities-and-customers-affected-by-covid-19/?_encoding=UTF8&token=GW&utm_content=COVID-19_roundup&utm_medium=swm&utm_source=gateway&utm_term=gw03162020&ref_=nav_swm_undefined&pf_rd_p=cf6260e5-93a9-45ad-9653-d1fc95751fac&pf_rd_s=nav-sitewide-msg-text-export&pf_rd_t=4201&pf_rd_i=navbar-4201&pf_rd_m=ATVPDKIKX0DER&pf_rd_r=C045QSGNV9P6E7SYVE0S'"
+        > <b>Amazon's response to COVID-19 </b></div>
+       </nav>
 </font>
-    </div>
+</div>
+</header>
+
+<!-- SECTION 1, 8개의 사진이 나오는 부분 + 슬라이드 배경이 바뀌는 부분-->
+<div class="section">
+	<input type="radio" name="slide" id="slide01" checked>
+	<input type="radio" name="slide" id="slide02">
+	<input type="radio" name="slide" id="slide03">
+	<input type="radio" name="slide" id="slide04">
+	<input type="radio" name="slide" id="slide05">
+	<input type="radio" name="slide" id="slide06">
+	<div class="slidewrap">
+		<ul class="slidelist">
+			<li>
+				<a>
+					<img src="./images/slides/1.jpg">
+				</a>
+			</li>
+			<li>
+				<a>
+					<img src="./images/slides/2.jpg">
+				</a>
+			</li>
+			<li>
+				<a>
+					<img src="./images/slides/3.jpg">
+				</a>
+			</li>
+			<li>
+				<a>
+					<img src="./images/slides/4.jpg">
+				</a>
+			</li>
+			<li>
+				<a>
+					<img src="./images/slides/5.jpg">
+				</a>
+			</li>
+			<li>
+				<a>
+					<img src="./images/slides/6.jpg">
+				</a>
+			</li>
+		</ul>
+
+		<div class="slide-control">
+			<div class="control01">
+				<label for="slide03" class="left"></label>
+				<label for="slide02" class="right"></label>
+			</div>
+			<div class="control02">
+				<label for="slide01" class="left"></label>
+				<label for="slide06" class="right"></label>
+			</div>
+			<div class="control03">
+				<label for="slide02" class="left"></label>
+				<label for="slide01" class="right"></label>
+			</div>
+			<div class="control04">
+				<label for="slide04" class="left"></label>
+				<label for="slide03" class="right"></label>
+			</div>
+			<div class="control05">
+				<label for="slide05" class="left"></label>
+				<label for="slide04" class="right"></label>
+			</div>
+			<div class="control06">
+				<label for="slide06" class="left"></label>
+				<label for="slide05" class="right"></label>
+            </div>
+		</div>
+	</div>
 </div>
 
-</header>
+<!-- SECTION 2, Discover Amazon-->
+
+<!-- SECTION 3, Amazon Top Sellers-->
+
+<!-- SECTION 4, 4개의 사진이 나오는 부분-->
+
+<!-- FOOTER -->
+
+</font>
+</head>
+
+
+<body>
 </body>
 
 </html>
