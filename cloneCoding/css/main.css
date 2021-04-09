@@ -79,6 +79,7 @@ header{
 }
 
 #layoutPhotoSetting {
+	overflow: hidden;
 	text-align: center;
 	margin:25px;
 	font: black;
@@ -89,6 +90,7 @@ header{
   }
 
 #fourLayoutPhotoSetting {
+	overflow: hidden;
 	float: left;
 	text-align: center;
 	margin:25px;
