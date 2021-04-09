@@ -6,3 +6,5 @@ new Swiper('.myswiper', {
 	speed : 1000,
 
 });
+
+<script> function btn(sample){ alert(sample); } </script>

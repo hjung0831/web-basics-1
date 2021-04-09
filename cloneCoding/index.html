@@ -7,50 +7,14 @@
 	<meta charset="utf-8">
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <title> Amazon.com: Onlne Shopping </title>
+    <title> Amazon.com: Online Shopping </title>
     <link rel="icon" href="favicon.ico" />
 
-	<style>
-	/* 브라우저 마진과 패딩 리셋 */
-	* {margin:0;padding:0;}
-
-	/* INPUT 가리기 */
-	.section [id*="slide"] {display:none;}
-	
-	/* 슬라이드 영역 - max-width 크기를 조절해주면 됩니다*/
-	.section .slidewrap {max-width:1200px;margin:0 auto;overflow:hidden;position:relative;}
-	.section .slidelist {white-space:nowrap;font-size:0;}
-	.section .slidelist > li {display:inline-block;vertical-align:middle;width:100%;transition:all .5s;}
-	.section .slidelist > li > a {display:block;position:relative;}
-
-	/* 좌우로 넘기는 LABEL버튼에 대한 스타일 */
-	.section .slide-control {position:absolute;top:0;left:0;z-index:10;width:100%;height:100%;}
-	.section .slide-control label {position:absolute;z-index:1;top:50%;transform:translateY(-50%);padding:50px;cursor:pointer;}
-	.section .slide-control .left {left:30px;background:url('./img/left.png') center center / 100% no-repeat;}
-	.section .slide-control .right {right:30px;background:url('./img/right.png') center center / 100% no-repeat;}
-	.section .slide-control [class*="control"] {display:none;}
-
-	/* INPUT이 체크되면 변화값이 li까지 전달되는 스타일 */
-	.section [id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}
-	.section [id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}
-	.section [id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}
-	.section [id="slide04"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-300%);}
-	.section [id="slide05"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-400%);}
-	.section [id="slide06"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-500%);}
-	
-	/*  INPUT이 체크되면 변화값이 좌우 슬라이드 버튼을 담고 있는 div 까지 전달되는 스타일 */
-	.section [id="slide01"]:checked ~ .slidewrap .control01 {display:block;}
-	.section [id="slide02"]:checked ~ .slidewrap .control02 {display:block;}
-	.section [id="slide03"]:checked ~ .slidewrap .control03 {display:block;}
-	.section [id="slide04"]:checked ~ .slidewrap .control03 {display:block;}
-	.section [id="slide05"]:checked ~ .slidewrap .control03 {display:block;}
-	.section [id="slide06"]:checked ~ .slidewrap .control03 {display:block;}
-	</style>
 </head>
 <html lang="en">
-<font color = white>
+<font color = "white">
 
-<body topmargin="0"  leftmargin="0" marginwidth="0" marginheight="0" bgcolor='#eaeded'>
+<body topmargin="0"  leftmargin="0" marginwidth="0" marginheight="0" bgcolor="#eaeded">
 <link rel="stylesheet" href="./css/main.css">
 <!-- 헤더 스타일 지정 -->
 <style>
@@ -58,27 +22,14 @@
             width: 100%;
             height: 63px;
             background-color: #131921;
-            font color : white;
+            font : white;
             }
     .bottom_box {
-            width: 100%;
+            border: 1px;
             height: 35px;
-            background-color: #232F3E;
-            font color : white;
+            background: #232F3E;
+            font : white;
             }
-    border: 1px
-    width: 90%;
-    height: 70px;
-    background: #131921;
-    font color : white;
-    }
-.bottom_box {
-    border: 1px
-    width: 90%;
-    height: 35px;
-    background: #232F3E;
-    font color : white;
-    }
 
 	/* 브라우저 마진과 패딩 리셋 */
 	* {margin:0;padding:0;}
@@ -112,6 +63,7 @@
 
 <!-- HEADER -->
 <header>
+
 <!-- 헤더의 상단 -->
 <div id="box">
     <div class="top_box">
@@ -120,27 +72,26 @@
     <!-- 클릭하면 홈으로 이동하는 링크가 걸려있습니다 -->
     <div class="logo" style="display: inline-block">
             <a href="/" class="logo">
-                <img src="./images/logo.JPG" width=110, height=46 vspace=10 hspace=10 style="vertical-align:middle" alt="로고" style="display: inline-block">
+                <img src="./images/logo.JPG" width="110" height="46" vspace="10" hspace="10" style="vertical-align:middle" alt="로고" style="display: inline-block">
             </a>
     </div>
 
     <!-- location 아이콘 -->
-    <div class="location" style="display: inline-block">
-        <img src="./images/location.JPG" width=22, height=30 style="vertical-align:middle" alt="위치">
+    <div id="location" style="display: inline-block">
+        <img src="./images/location.JPG" width="22" height="30" style="vertical-align:middle" alt="위치">
         </div>
     
 
     <!-- 배송 글씨 -->
-    <div class="delivery" style="display: inline-block">
-        <font size = 2>
+    <div id="delivery" style="display: inline-block">
+        <font size = "2">
             Deliver to<br>
             <b>Republic of Korea</b>
         </font>
     </div>
 
     <!-- 검색창 -->
-    <div class="search" style=" margin:15px; display: inline-block">
-        <form style="display: inline-block" size=5>
+    <div id="search" style=" margin:15px; display: inline-block">
             <select name = "things" style="width:42px">
               <option="none"> All </option>
               <option> All departments </option>
@@ -172,22 +123,21 @@
               <option> Toys & Games </option>
               <option> Video Games </option>
             </select>
-        </form>
-        <input type="text" size=85 style="font-size:12pt; color:black;">
+        <input type="text" size="85" style="font-size:12pt; color:black;">
         <button>
             <a>
-                <img src="./images/search.JPG" style="vertical-align:middle" width=25px; height=25px; alt="검색 아이콘" style="display: inline-block">
+                <img src="./images/search.JPG" style="vertical-align:middle" width="25px"; height="25px"; alt="검색 아이콘" style="display: inline-block">
             </a>
         </button>
     
     </div>
 
     <!-- 언어 -->
-    <div class="language" style=" display: inline-block" >
-            <form  style="display: inline-block" size=5>
+    <div id="language" style=" display: inline-block" >
+            <form  style="display: inline-block" size="5">
                 <div style=" display: inline-block" position:fixed;left:300;>
                 <a>
-                    <img src="./images/language.JPG" width=23, height=15 style="vertical-align:middle" alt="cart">
+                    <img src="./images/language.JPG" width="23", height="15" style="vertical-align:middle" alt="cart">
                 </a>
                 </div>
                 <select name = "language" style="width:20px">
@@ -213,10 +163,10 @@
     </div>
 
     <!-- 배송할 지역 -->
-    <div class="whereto" style="margin:5px; display: inline-block">
-        <font size = 2>
+    <div id="whereto" style="margin:5px; display: inline-block">
+        <font size = "2">
         Hello, Sign in<br>
-        <form  style="display: inline-block" size=5>
+        <form  style="display: inline-block" size="5">
             <select name = "signIn" style="width:123px">
             <option><b>Accounts & Lists</b></option>
             </select>
@@ -225,19 +175,19 @@
     </div>
 
     <!-- 주문 -->
-    <div class="returnsAndOrders" style="margin:5px; display: inline-block">
-        <font size = 2 color="white">
+    <div id="returnsAndOrders" style="margin:5px; display: inline-block">
+        <font size = "2" color="white">
         Returns<br>
         <b>& Orders</b>
         </font>
     </div>
 
     <!-- 장바구니 -->
-    <div class="carts" style="margin: 5px; display: inline-block">
+    <div id="carts" style="margin: 5px; display: inline-block">
     <a>
-        <img src="./images/cart.JPG" width=40, height=40 style="vertical-align:middle" alt="cart">
+        <img src="./images/cart.JPG" width="40", height="40" style="vertical-align:middle" alt="cart">
     </a>
-    <font size = 4>
+    <font size = "4">
         <b>Cart</b><br>
         </form>
         </font>
@@ -245,11 +195,11 @@
 </div>
 
 <!-- 헤더의 하단 -->
-<div id = "box">
+<div id = "header_box">
     <div class="bottom_box">
-<font size = 3> &nbsp; 
-    <div style="display: inline-block">
-        <a><img src="./images/hamburger.JPG" width=25, height=25> </a>
+<font size = "3"> &nbsp; 
+    <div style="display: inline-block" class="bottom_box1">
+        <a><img src="./images/hamburger.JPG" width="25", height="25"> </a>
         All
         </div> &nbsp; 
        <div style="display: inline-block" OnClick="location.href ='https://www.amazon.com/international-sales-offers/b/?ie=UTF8&node=15529609011&ref_=nav_cs_gb_intl_52df97a2eee74206a8343034e85cd058'"> Today's Deals </div> &nbsp; 
@@ -258,56 +208,198 @@
        <div style="display: inline-block" OnClick="location.href ='https://www.amazon.com/b/?_encoding=UTF8&ld=AZUSSOA-sell&node=12766669011&ref_=nav_cs_sell_9321d964d1ab428b8d83e204c043fc01'"> Sell </div> &nbsp; 
        <div style="display: inline-block" OnClick="location.href ='https://www.amazon.com/registries?_encoding=UTF8&redirect=true&ref_=nav_cs_registry_1c421982e26d4ec48ca364be68f201b5'"
        > Registry</div>
-       <nav>
-        <div id ="rightalign" style="display: inline-block" OnClick="location.href ='https://www.aboutamazon.com/company-news/amazons-actions-to-help-employees-communities-and-customers-affected-by-covid-19/?_encoding=UTF8&token=GW&utm_content=COVID-19_roundup&utm_medium=swm&utm_source=gateway&utm_term=gw03162020&ref_=nav_swm_undefined&pf_rd_p=cf6260e5-93a9-45ad-9653-d1fc95751fac&pf_rd_s=nav-sitewide-msg-text-export&pf_rd_t=4201&pf_rd_i=navbar-4201&pf_rd_m=ATVPDKIKX0DER&pf_rd_r=C045QSGNV9P6E7SYVE0S'"
+        <div id ="amazonsResponse" style="display: inline-block" OnClick="location.href ='https://www.aboutamazon.com/company-news/amazons-actions-to-help-employees-communities-and-customers-affected-by-covid-19/?_encoding=UTF8&token=GW&utm_content=COVID-19_roundup&utm_medium=swm&utm_source=gateway&utm_term=gw03162020&ref_=nav_swm_undefined&pf_rd_p=cf6260e5-93a9-45ad-9653-d1fc95751fac&pf_rd_s=nav-sitewide-msg-text-export&pf_rd_t=4201&pf_rd_i=navbar-4201&pf_rd_m=ATVPDKIKX0DER&pf_rd_r=C045QSGNV9P6E7SYVE0S'"
         > <b>Amazon's response to COVID-19 </b></div>
-       </nav>
+    </div>
 </font>
-</div>
+
 </header>
 
 <body>
 
-<!-- SECTION 1, 8개의 사진이 나오는 부분 + 슬라이드 배경이 바뀌는 부분-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+<!-- SECTION 1, 슬라이드 배경이 바뀌는 부분-->
+<div id="section01">
+    <!-- 섹션 1 기본 설정 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+    <style type="text/css">
+    .swiper-container {
+        margin: 0;
+        width: 1520px;;
+        height: 230px;
+        border: 0px;
+    }
+    </style>
 
-<style type="text/css">
+    <!-- 스와이프 아이콘
+    <div class="swipeSetting">
+        <a>
+            <img src="./images/swipe.png" width="200px;" height="200px;" left="2000px;" top= "1000px;" z-index:9999;>
+        </a>
+    </div> -->
 
-.swiper-container {
-	align-items:center;
-    margin: 0 auto;
-	width: 1500px;;
-	height: 700px;
-	border: 0px;
-}
+    <div class="swiper-container myswiper">
+        <!-- 슬라이드 -->
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./images/slides/1.jpg"></div>
+            <div class="swiper-slide"><img src="./images/slides/2.jpg"></div>
+            <div class="swiper-slide"><img src="./images/slides/3.jpg"></div>
+            <div class="swiper-slide"><img src="./images/slides/4.jpg"></div>
+            <div class="swiper-slide"><img src="./images/slides/5.jpg"></div>
+            <div class="swiper-slide"><img src="./images/slides/6.jpg"></div>
+        </div>
+    </div>
+    
+    <script>
+        new Swiper('.myswiper', {
+            speed : 1000,
+        });
+    </script>
 
-</style>
-<!-- 스와이프 아이콘 -->
-<div class="swiper-container myswiper">
-	<div class="swipeSetting">
-		<a>
-			<img src="./images/swipe.png" width="500px" height="500px" left="2000px" top= "1000px" z-index:9999;>
-		</a>
-	</div>
-	<!-- 슬라이드 -->
-	<div class="swiper-wrapper">
-		<div class="swiper-slide"><img src="./images/slides/1.jpg"></div>
-		<div class="swiper-slide"><img src="./images/slides/2.jpg"></div>
-		<div class="swiper-slide"><img src="./images/slides/3.jpg"></div>
-		<div class="swiper-slide"><img src="./images/slides/4.jpg"></div>
-		<div class="swiper-slide"><img src="./images/slides/5.jpg"></div>
-        <div class="swiper-slide"><img src="./images/slides/6.jpg"></div>
-	</div>
 </div>
 
-<script>
-	new Swiper('.myswiper', {
-		speed : 1000,
-	});
-</script>
-	
-	
+<font color="black" size="4.5px"><b>
+<!-- SECTION 2-1, 8개의 레이아웃 상단 -->
+<div id="layoutBg">
+    <div id="layoutPhotoSetting">
+        <div style="text-align:left;">
+            <br>&nbsp; Find your ideal<br><br>
+        </div>
+        <div>
+            <a href="https://www.amazon.com/s?i=electronics&bbn=1266092011&rh=n%3A172282%2Cn%3A1266092011%2Cn%3A172659&field-shipping_option-bin=3242350011&pf_rd_i=16225009011&pf_rd_m=ATVPDKIKX0DER&pf_rd_p=85a9188d-dbd5-424e-9512-339a1227d37c&pf_rd_r=CFFHQ58ZAE1X94Z4E4RA&pf_rd_s=merchandised-search-5&pf_rd_t=101&qid=1588978526&rnid=1266092011&ref=sr_nr_n_13">
+            <img src="images/sec1pic1.JPG" style="width: 280px; height: 300px;">
+            </a>
+        </div>
+        <div style="text-align:left; font-size: 2px;">
+            <a href="https://www.amazon.com/s?i=electronics&bbn=1266092011&rh=n%3A172282%2Cn%3A1266092011%2Cn%3A172659&field-shipping_option-bin=3242350011&pf_rd_i=16225009011&pf_rd_m=ATVPDKIKX0DER&pf_rd_p=85a9188d-dbd5-424e-9512-339a1227d37c&pf_rd_r=CFFHQ58ZAE1X94Z4E4RA&pf_rd_s=merchandised-search-5&pf_rd_t=101&qid=1588978526&rnid=1266092011&ref=sr_nr_n_13">
+            <br> See more
+            </a>
+        </div>
+    </div>
+
+    <div id="layoutPhotoSetting">
+        <div style="text-align:left;">
+            <br>&nbsp; Computers & Accessories<br><br>
+        </div>
+        <div>
+            <a href="https://www.amazon.com/b?node=16225007011&pf_rd_r=CFFHQ58ZAE1X94Z4E4RA&pf_rd_p=a13f1949-dc1c-4090-9236-ef9627cd9724&pd_rd_r=daf32fed-245c-43bb-a3f7-d0c00c7cdb39&pd_rd_w=Yaq06&pd_rd_wg=aXKlc&ref_=pd_gw_unk">
+            <img src="images/sec1pic2.JPG" style="width: 280px; height: 300px;">
+        </a>
+        </div>
+        <div style="text-align:left; font-size: 2px;">
+            <a href="https://www.amazon.com/b?node=16225007011&pf_rd_r=B4KY6ES84SZ7YDEK76P8&pf_rd_p=a13f1949-dc1c-4090-9236-ef9627cd9724&pd_rd_r=cc20ecba-d7f2-4c99-a2d1-4ab1f5a2abc3&pd_rd_w=zkqdZ&pd_rd_wg=920Bq&ref_=pd_gw_unk">
+            <br> See more
+            </a>
+        </div>
+    </div>
+
+    <div id="layoutPhotoSetting">
+        <div style="text-align:left;">
+            <br>&nbsp; Beauty picks<br><br>
+        </div>
+        <div>
+            <a href="https://www.amazon.com/b/?node=16225006011&pf_rd_r=CFFHQ58ZAE1X94Z4E4RA&pf_rd_p=4a5ac24a-2f14-4296-8a03-0c034c0a7904&pd_rd_r=daf32fed-245c-43bb-a3f7-d0c00c7cdb39&pd_rd_w=5ygnh&pd_rd_wg=aXKlc&ref_=pd_gw_unk">
+            <img src="images/sec1pic3.JPG" style="width: 280px; height: 300px;">
+        </a>
+        </div>
+        <div style="text-align:left; font-size: 2px;">
+            <a href="https://www.amazon.com/b/?node=16225006011&pf_rd_r=CFFHQ58ZAE1X94Z4E4RA&pf_rd_p=4a5ac24a-2f14-4296-8a03-0c034c0a7904&pd_rd_r=daf32fed-245c-43bb-a3f7-d0c00c7cdb39&pd_rd_w=5ygnh&pd_rd_wg=aXKlc&ref_=pd_gw_unk">
+            <br> See more
+            </a>
+        </div>
+    </div>
+
+    <div id="layoutPhotoSetting">
+        <div style="text-align:left;">
+            <br>&nbsp; Sign in for the best experience<br><br>
+        </div>
+        <div>
+            <button class="favorite styled" onclick="javascript:btn()" type="button" style="WIDTH: 230pt; HEIGHT:20pt; background-color:#foc74a;"> Sign in Securely</button><br><br>
+            <a href="https://www.amazon.com/b?node=20338496011&pf_rd_r=CFFHQ58ZAE1X94Z4E4RA&pf_rd_p=696ad652-44a2-497e-883b-b1ed606f2732&pd_rd_r=daf32fed-245c-43bb-a3f7-d0c00c7cdb39&pd_rd_w=q0VJa&pd_rd_wg=aXKlc&ref_=pd_gw_unk">
+            <img src="images/sec1pic4.JPG" style="width: 280px; height: 250px;">
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- SECTION 2-1, 8개의 레이아웃 하단 -->
+<div id="layoutBg">
+    <div id="layoutPhotoSetting">
+        <div style="text-align:left;">
+            <br>&nbsp; Shop top categories<br><br>
+        </div>
+        <div>
+            <a href="https://www.amazon.com/b?node=21439846011&pf_rd_r=P5QWCJ4V8FGKQMEQFRXS&pf_rd_p=caa6e87b-5c64-4215-9d4a-b29f6b0c1f24&pd_rd_r=867c99bd-6699-456f-97e6-84aeecab2880&pd_rd_w=edlG8&pd_rd_wg=DBeff&ref_=pd_gw_unk">
+            <img src="images/sec1pic5.JPG" style="width: 280px; height: 300px;">
+            </a>
+        </div>
+        <div style="text-align:left; font-size: 2px;">
+            <a href="https://www.amazon.com/b?node=21439846011&pf_rd_r=P5QWCJ4V8FGKQMEQFRXS&pf_rd_p=caa6e87b-5c64-4215-9d4a-b29f6b0c1f24&pd_rd_r=867c99bd-6699-456f-97e6-84aeecab2880&pd_rd_w=edlG8&pd_rd_wg=DBeff&ref_=pd_gw_unk">
+            <br> See more
+            </a>
+        </div>
+    </div>
+
+    <div id="layoutPhotoSetting">
+        <div style="text-align:left;">
+            <br>&nbsp; Amazon Basics<br><br>
+        </div>
+        <div>
+            <a href="https://www.amazon.com/s?k=amazonbasics&pd_rd_r=867c99bd-6699-456f-97e6-84aeecab2880&pd_rd_w=6Sw39&pd_rd_wg=DBeff&pf_rd_p=9349ffb9-3aaa-476f-8532-6a4a5c3da3e7&pf_rd_r=P5QWCJ4V8FGKQMEQFRXS&ref=pd_gw_unk">
+            <img src="images/sec1pic6.JPG" style="width: 280px; height: 300px;">
+        </a>
+        </div>
+        <div style="text-align:left; font-size: 2px;">
+            <a href="https://www.amazon.com/s?k=amazonbasics&pd_rd_r=867c99bd-6699-456f-97e6-84aeecab2880&pd_rd_w=6Sw39&pd_rd_wg=DBeff&pf_rd_p=9349ffb9-3aaa-476f-8532-6a4a5c3da3e7&pf_rd_r=P5QWCJ4V8FGKQMEQFRXS&ref=pd_gw_unk">
+            <br> See more
+            </a>
+        </div>
+    </div>
+
+    <div id="layoutPhotoSetting">
+        <div style="text-align:left;">
+            <br>&nbsp; Shop by Category<br><br>
+        </div>
+        <div>
+            <a href="https://www.amazon.com/b?node=16225007011&pf_rd_r=P5QWCJ4V8FGKQMEQFRXS&pf_rd_p=e5b0c85f-569c-4c90-a58f-0c0a260e45a0&pd_rd_r=867c99bd-6699-456f-97e6-84aeecab2880&pd_rd_w=iZXrM&pd_rd_wg=DBeff&ref_=pd_gw_unk">
+            <img src="images/sec1pic7.JPG" style="width: 280px; height: 300px;">
+        </a>
+        </div>
+        <div style="text-align:left; font-size: 2px;">
+            <a href="https://www.amazon.com/b?node=16225007011&pf_rd_r=P5QWCJ4V8FGKQMEQFRXS&pf_rd_p=e5b0c85f-569c-4c90-a58f-0c0a260e45a0&pd_rd_r=867c99bd-6699-456f-97e6-84aeecab2880&pd_rd_w=iZXrM&pd_rd_wg=DBeff&ref_=pd_gw_unk">
+            <br> Shop now
+            </a>
+        </div>
+    </div>
+
+    <div id="layoutPhotoSetting">
+        <div style="text-align:left;">
+            <br>&nbsp; Get fit at home<br><br>
+        </div>
+        <div>
+            <a href="https://www.amazon.com/b?node=16225014011&pf_rd_r=P5QWCJ4V8FGKQMEQFRXS&pf_rd_p=152091c3-ff04-4c57-8721-f1423f1e428d&pd_rd_r=867c99bd-6699-456f-97e6-84aeecab2880&pd_rd_w=4wjuf&pd_rd_wg=DBeff&ref_=pd_gw_unk">
+            <img src="images/sec1pic8.JPG" style="width: 280px; height: 300px;">
+        </a>
+        </div>
+        <div style="text-align:left; font-size: 2px;">
+            <a href="https://www.amazon.com/b?node=16225014011&pf_rd_r=P5QWCJ4V8FGKQMEQFRXS&pf_rd_p=152091c3-ff04-4c57-8721-f1423f1e428d&pd_rd_r=867c99bd-6699-456f-97e6-84aeecab2880&pd_rd_w=4wjuf&pd_rd_wg=DBeff&ref_=pd_gw_unk">
+            <br> Explore now
+            </a>
+        </div>
+    </div>
+</div>
+
+
+</b></font>
+
+
+
+
+
+
+
+
+
 
 <!-- SECTION 2, Discover Amazon-->
 

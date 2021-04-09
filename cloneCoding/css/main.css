@@ -1,3 +1,6 @@
+* { font-family: "amazonEmber" !important; }
+
+
 .swiper-container {
 	width:600px;
 	height:400px;
@@ -15,10 +18,82 @@
 	box-shadow:0 0 5px #555;
 }
 
-#box .nav{
+#header_box .nav{
 	float:right
 }
 
-.swipeSetting{
-	position: fixed;
+#swipeSetting{
+	position: relative;
+	margin-left: 300px;
+	width="500px"
+	height="500px"
+	left="2000px"
+	top= "1000px"
 }
+
+.section2 #section2{
+	float:left;
+}
+
+#rightalign{
+	margin-right: 10px;
+	position: absolute;
+	float: right;
+}
+
+header{
+	overflow: hidden;
+}
+
+#swiper-container {
+	padding: 10px;
+	margin: 0 auto;
+	align-items:center;
+    margin: 0 auto;
+	width: 1800px;
+	height: 500px;
+}
+
+#amazonsResponse{
+	margin-right: 10px;
+	float: right;
+}
+
+#section1{
+	background-color: white;
+}
+
+.body{
+	font:black;
+}
+
+#layout01{
+	vertical-align: middle;
+	text-align:center;
+}
+
+#layoutBg{
+  display: inline-block;
+  display: flex;
+  text-align: center;
+}
+
+#layoutPhotoSetting {
+	text-align: center;
+	margin:25px;
+	font: black;
+	background-color: white;
+	flex:1;
+	width: 5%;
+	box-sizing: border-box;
+  }
+
+#fourLayoutPhotoSetting {
+	float: left;
+	text-align: center;
+	margin:25px;
+	font: black;
+	flex:1;
+	width: 5%;
+	box-sizing: border-box;
+  }
