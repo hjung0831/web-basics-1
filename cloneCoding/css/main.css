@@ -45,7 +45,7 @@ header{
 	overflow: hidden;
 }
 
-#swiper-container {
+.swiper-container1 {
 	padding: 10px;
 	margin: 0 auto;
 	align-items:center;
@@ -57,6 +57,7 @@ header{
 #amazonsResponse{
 	margin-right: 10px;
 	float: right;
+	text-align: center;
 }
 
 #section1{
@@ -90,6 +91,7 @@ header{
   }
 
 #fourLayoutPhotoSetting {
+	background-color: white;
 	overflow: hidden;
 	float: left;
 	text-align: center;
@@ -98,4 +100,31 @@ header{
 	flex:1;
 	width: 5%;
 	box-sizing: border-box;
+  }
+
+#section3{
+	margin: 0 auto;
+}
+
+#layoutPhotoSetting {
+	overflow: hidden;
+	text-align: center;
+	margin: 25px;
+	font: black;
+	background-color: white;
+	flex:1;
+  }
+
+  #layoutPhotoSetting2{
+	  margin-left: 0px;
+	  padding: 0px;
+  }
+
+  #lalala{
+	  margin: 0 auto;
+	  padding: 0 auto;
+	  float: left;
+	  border: 0px;
+	  box-shadow: none;
+
   }
