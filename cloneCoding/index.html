@@ -19,17 +19,19 @@
 <!-- 헤더 스타일 지정 -->
 <style>
     .top_box {
-            width: 100%;
-            height: 63px;
-            background-color: #131921;
-            font : white;
-            }
+        width: 100%;
+        height: 63px;
+        background-color: #131921;
+        font : white;
+        margin: 0 auto;
+        }
     .bottom_box {
-            border: 1px;
-            height: 35px;
-            background: #232F3E;
-            font : white;
-            }
+        margin-top: -22px;
+        top:-50px;
+        height: 35px;
+        background: #232F3E;
+        font : white;
+        }
 
 	/* 브라우저 마진과 패딩 리셋 */
 	* {margin:0;padding:0;}
@@ -195,22 +197,123 @@
 </div>
 
 <!-- 헤더의 하단 -->
+<font size = "3"> &nbsp; 
+
+
 <div id = "header_box">
     <div class="bottom_box">
-<font size = "3"> &nbsp; 
-    <div style="display: inline-block" class="bottom_box1">
-        <a><img src="./images/hamburger.JPG" width="25", height="25"> </a>
-        All
-        </div> &nbsp; 
-       <div style="display: inline-block" OnClick="location.href ='https://www.amazon.com/international-sales-offers/b/?ie=UTF8&node=15529609011&ref_=nav_cs_gb_intl_52df97a2eee74206a8343034e85cd058'"> Today's Deals </div> &nbsp; 
-       <div style="display: inline-block" OnClick="location.href ='https://www.amazon.com/gp/help/customer/display.html?nodeId=508510&ref_=nav_cs_customerservice_2bf4fe8c5ec54e6bae2d1c24043f012b'"> Customer Service </div> &nbsp; 
-       <div style="display: inline-block" OnClick="location.href ='https://www.amazon.com/gift-cards/b/?ie=UTF8&node=2238192011&ref_=nav_cs_gc_4fb606b1a14b44e4823e00c03fc71f47'"> Gift Cards </div> &nbsp; 
-       <div style="display: inline-block" OnClick="location.href ='https://www.amazon.com/b/?_encoding=UTF8&ld=AZUSSOA-sell&node=12766669011&ref_=nav_cs_sell_9321d964d1ab428b8d83e204c043fc01'"> Sell </div> &nbsp; 
-       <div style="display: inline-block" OnClick="location.href ='https://www.amazon.com/registries?_encoding=UTF8&redirect=true&ref_=nav_cs_registry_1c421982e26d4ec48ca364be68f201b5'"
-       > Registry</div>
-        <div id ="amazonsResponse" style="display: inline-block" OnClick="location.href ='https://www.aboutamazon.com/company-news/amazons-actions-to-help-employees-communities-and-customers-affected-by-covid-19/?_encoding=UTF8&token=GW&utm_content=COVID-19_roundup&utm_medium=swm&utm_source=gateway&utm_term=gw03162020&ref_=nav_swm_undefined&pf_rd_p=cf6260e5-93a9-45ad-9653-d1fc95751fac&pf_rd_s=nav-sitewide-msg-text-export&pf_rd_t=4201&pf_rd_i=navbar-4201&pf_rd_m=ATVPDKIKX0DER&pf_rd_r=C045QSGNV9P6E7SYVE0S'"
-        > <b>Amazon's response to COVID-19 </b></div>
+ <!-- 사이드바 -->
+    <div id="sidebar" style="z-index:9998; font: white;">
+        <style>
+            input[id="menuicon"] {display:none;}
+            input[id="menuicon"] + label {display:block;margin-top:5px;width:3px;height:3px;padding:9px;position:relative;cursor:pointer;}
+            input[id="menuicon"] + label span {display:block;position:absolute;width:100%;height:5px;background:white;transition:all .35s;}
+            input[id="menuicon"] + label span:nth-child(1) {top:0;}
+            input[id="menuicon"] + label span:nth-child(2) {top:50%;transform:translateY(-50%);}
+            input[id="menuicon"] + label span:nth-child(3) {bottom:0;}
+            input[id="menuicon"]:checked + label {z-index:2;}
+            input[id="menuicon"]:checked + label span {background:white;}
+            input[id="menuicon"]:checked + label span:nth-child(1) {top:50%;transform:translateY(-50%) rotate(45deg);}
+            input[id="menuicon"]:checked + label span:nth-child(2) {opacity:0;}
+            input[id="menuicon"]:checked + label span:nth-child(3) {bottom:50%;transform:translateY(50%) rotate(-45deg);}
+            div[class="sidebar"] {width:300px;height:100%;background:#232F3E;position:fixed;top:0;left:-300px;z-index:1;transition:all .35s;}
+            input[id="menuicon"]:checked + label + div {left:0;}
+        </style>
+        <input type="checkbox" id="menuicon">
+        <label for="menuicon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <div class="sidebar">
+            <br>
+            <br>
+            <br>
+            <br>
+            <ul>
+                <li>
+                    <a href="#" >Hello, Sign in</a><br><br>
+                </li>
+                <li>
+                    <a href="#" >Digital Content & Devices</a>
+                </li>
+                <li>
+                    <a href="#" >Amazon Music</a>
+                </li>
+                <li>
+                    <a href="#" >Kindle E-readers & Books</a>
+                </li>
+                <li>
+                    <a href="#" >Appstore for Android</a><br><br>
+                </li>
+                <li>
+                    <a href="#" >Shop By Department</a>
+                </li>
+                <li>
+                    <a href="#" >Electronics</a>
+                </li>
+                <li>
+                    <a href="#">Computers</a>
+                </li>
+                <li>
+                    <a href="#" >Smart Home</a>
+                </li>
+                <li>
+                    <a href="#" >Arts & Crafts</a>
+                </li>
+                <li>
+                    <a href="#" >See All</a><br><br>
+                </li>
+                <li>
+                    <a href="#" >Programs & Features</a>
+                </li>
+                <li>
+                    <a href="#">Gift Cards</a>
+                </li>
+                <li>
+                        <a href="#">#FoundItOnAmazon</a>
+                </li>
+                <li>
+                        <a href="#">Amazon Live</a>
+                </li>
+                <li>
+                        <a href="#">International Shopping</a>
+                </li>
+                <li>
+                        <a href="#">See All</a><br><br>
+                </li>
+                <li>
+                        <a href="#">Help & Settings</a>
+                </li>
+                <li>
+                        <a href="#">Your Account</a>
+                </li>
+                <li>
+                        <a href="#">English</a>
+                </li>
+                <li>
+                        <a href="#">United States</a>
+                </li>
+                <li>
+                        <a href="#">Customer Service</a><br>
+                </li><li>
+                        <a href="#">Sign In</a>
+                </li>
+            </ul>
+        </div>
     </div>
+
+    <!-- 사이드바가 아닌 부분 -->
+    <div id="notsideBar">
+        <div style="display: inline-block" OnClick="location.href ='https://www.amazon.com/international-sales-offers/b/?ie=UTF8&node=15529609011&ref_=nav_cs_gb_intl_52df97a2eee74206a8343034e85cd058'"> Today's Deals </div> &nbsp; 
+        <div style="display: inline-block" OnClick="location.href ='https://www.amazon.com/gp/help/customer/display.html?nodeId=508510&ref_=nav_cs_customerservice_2bf4fe8c5ec54e6bae2d1c24043f012b'"> Customer Service </div> &nbsp; 
+        <div style="display: inline-block" OnClick="location.href ='https://www.amazon.com/gift-cards/b/?ie=UTF8&node=2238192011&ref_=nav_cs_gc_4fb606b1a14b44e4823e00c03fc71f47'"> Gift Cards </div> &nbsp; 
+        <div style="display: inline-block" OnClick="location.href ='https://www.amazon.com/b/?_encoding=UTF8&ld=AZUSSOA-sell&node=12766669011&ref_=nav_cs_sell_9321d964d1ab428b8d83e204c043fc01'"> Sell </div> &nbsp; 
+        <div style="display: inline-block" OnClick="location.href ='https://www.amazon.com/registries?_encoding=UTF8&redirect=true&ref_=nav_cs_registry_1c421982e26d4ec48ca364be68f201b5'"
+        > Registry</div>
+         <div id ="amazonsResponse" style="display: inline-block" OnClick="location.href ='https://www.aboutamazon.com/company-news/amazons-actions-to-help-employees-communities-and-customers-affected-by-covid-19/?_encoding=UTF8&token=GW&utm_content=COVID-19_roundup&utm_medium=swm&utm_source=gateway&utm_term=gw03162020&ref_=nav_swm_undefined&pf_rd_p=cf6260e5-93a9-45ad-9653-d1fc95751fac&pf_rd_s=nav-sitewide-msg-text-export&pf_rd_t=4201&pf_rd_i=navbar-4201&pf_rd_m=ATVPDKIKX0DER&pf_rd_r=C045QSGNV9P6E7SYVE0S'">
+         <b>Amazon's response to COVID-19 </b></div>
+        </div>
 </font>
 
 </header>
@@ -552,6 +655,9 @@
 </div>
 
 </b></font>
+
+<!-- 햄버거 바를 클릭하면 나오는 기능 -->
+
 
 <!-- FOOTER -->
 </body>

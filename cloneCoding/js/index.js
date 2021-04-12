@@ -7,4 +7,4 @@ new Swiper('.myswiper', {
 
 });
 
-<script> function btn(sample){ alert(sample); } </script>
+<script> function btn(sample){ alert(sample);} </script>

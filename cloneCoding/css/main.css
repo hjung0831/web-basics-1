@@ -131,3 +131,34 @@ header{
 	  font: black;
   }
   
+  #sidebar{
+	  position: fixed;
+	  size: fixed;
+	  width: 10px;
+	  height: 10px;
+	  font: white;
+	  text-decoration-line: none;
+
+  }
+
+a{
+	text-decoration: none;
+}
+
+#notsideBar{
+	margin-left: 40px;
+}
+
+
+  a:link {
+	color : white;
+  }
+  a:visited {
+	color : white;
+  }
+  a:hover {
+	color : white;
+  }
+  a:active {
+	color : white;
+  }
