@@ -25,21 +25,16 @@
 #swipeSetting{
 	position: relative;
 	margin-left: 300px;
-	width="500px"
-	height="500px"
-	left="2000px"
-	top= "1000px"
+	width:"500px";
+	height:"500px";
+	left:"2000px";
+	top: "1000px";
 }
 
 .section2 #section2{
 	float:left;
 }
 
-#rightalign{
-	margin-right: 10px;
-	position: absolute;
-	float: right;
-}
 
 header{
 	overflow: hidden;
@@ -73,13 +68,13 @@ header{
 	text-align:center;
 }
 
-#layoutBg{
+.layoutBg{
   display: inline-block;
   display: flex;
   text-align: center;
 }
 
-#layoutPhotoSetting {
+.layoutPhotoSetting {
 	overflow: hidden;
 	text-align: center;
 	margin:25px;
@@ -125,14 +120,14 @@ header{
   }
 
 
-  #swipeAlert{
+ .swipeAlert{
 	  text-align: center;
 	  font-size: 20px;
 	  font: black;
   }
   
   #sidebar{
-	  position: fixed;
+	  position: absolute;
 	  size: fixed;
 	  width: 10px;
 	  height: 10px;
@@ -162,3 +157,30 @@ a{
   a:active {
 	color : white;
   }
+
+  select {
+	background: transparent;
+	border: none;
+	padding: 6px 12px;
+  }
+  button {
+	padding: 6px 12px;
+	background: transparent;
+	border: none;
+  }
+  .input-group-addon {
+	padding: 0!important;
+  }
+
+#searchbox{
+	position: relative;
+	margin-top: -45px;
+}
+
+
+#rightalign{
+	position:absolute;
+	right: 35px;
+	overflow: hidden;
+}
+

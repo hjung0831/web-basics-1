@@ -16,11 +16,12 @@
 
 <body topmargin="0"  leftmargin="0" marginwidth="0" marginheight="0" bgcolor="#eaeded">
 <link rel="stylesheet" href="./css/main.css">
-<!-- 헤더 스타일 지정 -->
+<!-- 헤더 스타일 지정 --><b>
 <style>
     .top_box {
         width: 100%;
         height: 63px;
+        float: left;
         background-color: #131921;
         font : white;
         margin: 0 auto;
@@ -61,9 +62,9 @@
 	.section [id="slide01"]:checked ~ .slidewrap .control01 {display:block;}
 	.section [id="slide02"]:checked ~ .slidewrap .control02 {display:block;}
 	.section [id="slide03"]:checked ~ .slidewrap .control03 {display:block;}
-</style>
+</style></b>
 
-<!-- HEADER -->
+<!-- HEADER --><b>
 <header>
 
 <!-- 헤더의 상단 -->
@@ -74,7 +75,7 @@
     <!-- 클릭하면 홈으로 이동하는 링크가 걸려있습니다 -->
     <div class="logo" style="display: inline-block">
             <a href="/" class="logo">
-                <img src="./images/logo.JPG" width="110" height="46" vspace="10" hspace="10" style="vertical-align:middle" alt="로고" style="display: inline-block">
+                <img src="./images/logo.JPG" width="110" height="46" vspace="10" hspace="10" style="vertical-align:middle" alt="로고">
             </a>
     </div>
 
@@ -92,54 +93,61 @@
         </font>
     </div>
 
-    <!-- 검색창 -->
-    <div id="search" style=" margin:15px; display: inline-block">
-            <select name = "things" style="width:42px">
-              <option="none"> All </option>
-              <option> All departments </option>
-              <option> Arts & Crafts </option>
-              <option> Automative </option>
-              <option> Baby </option>
-              <option> Beauty & Personal Care </option>
-              <option> Books </option>
-              <option> Computers </option>
-              <option> Digital Music </option>
-              <option> Electronics </option>
-              <option> Kindle Store </option>
-              <option> Prime Video </option>
-              <option> Women's Fashion </option>
-              <option> Men's Fashion </option>
-              <option> Girl's Fashion </option>
-              <option> Boy's Fashion </option>
-              <option> Deals </option>
-              <option> Health & Household </option>
-              <option> Home & Kitchen</option>
-              <option> Industrial & Scienticific </option>
-              <option> Luggage </option>
-              <option> Movies & TV </option>
-              <option> Music, CDs & Vinyl </option>
-              <option> Pet Supplies </option>
-              <option> Software </option>
-              <option> Sports & Outdoors </option>
-              <option> Tools & Home Improvement </option>
-              <option> Toys & Games </option>
-              <option> Video Games </option>
+    <!-- 검색창 -->&nbsp;&nbsp;
+    <div id="searchbox">
+        <link href="https://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet" />
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+        <div class="input-group" style="width:5px;">
+            <span class="input-group-addon">
+            <select style="width: 62px;">
+                <option>All departments</option>
+                <option>Arts & Crafts</option>
+                <option>Automative</option>
+                <option>Beauty & Personal Care</option>
+                <option>Books</option>
+                <option>Computers</option>
+                <option>Digital Music</option>
+                <option> Electronics </option>
+                <option> Kindle Store </option>
+                <option> Prime Video </option>
+                <option> Women's Fashion </option>
+                <option> Men's Fashion </option>
+                <option> Girl's Fashion </option>
+                <option> Boy's Fashion </option>
+                <option> Deals </option>
+                <option> Health & Household </option>
+                <option> Home & Kitchen</option>
+                <option> Industrial & Scienticific </option>
+                <option> Luggage </option>
+                <option> Movies & TV </option>
+                <option> Music, CDs & Vinyl </option>
+                <option> Pet Supplies </option>
+                <option> Software </option>
+                <option> Sports & Outdoors </option>
+                <option> Tools & Home Improvement </option>
+                <option> Toys & Games </option>
+                <option> Video Games </option>
             </select>
-        <input type="text" size="102" style="font-size:12pt; color:black;">
-        <button>
-            <a>
-                <img src="./images/search.JPG" style="vertical-align:middle" width="25px"; height="25px"; alt="검색 아이콘" style="display: inline-block">
-            </a>
-        </button>
-    
+            </span>
+            <input type="text" class="form-control" style="width:730px;">
+            <span class="input-group-addon" style="background-color: #F3A847;"> <button>🔍</button></span>
+        </div>
+        </div>
+        
+        </div>
+    </div>
     </div>
 
+    <div id="rightalign">
     <!-- 언어 -->
     <div id="language" style=" display: inline-block" >
             <form  style="display: inline-block" size="5">
                 <div style=" display: inline-block" position:fixed;left:300;>
                 <a>
-                    <img src="./images/language.JPG" width="23", height="15" style="vertical-align:middle" alt="cart">
+                    <img src="./images/language.JPG">
                 </a>
                 </div>
                 <select name = "language" style="width:20px">
@@ -166,16 +174,14 @@
 
     <!-- 배송할 지역 -->
     <div id="whereto" style="margin:5px; display: inline-block">
-        <font size = "2">
+        <font size = "2">&nbsp;&nbsp;&nbsp;
+        <a href="https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3Fref_%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&">
         Hello, Sign in<br>
-        <form  style="display: inline-block" size="5">
-            <select name = "signIn" style="width:123px">
-            <option><b>Accounts & Lists</b></option>
-            </select>
-        </form>
+        <b>Accounts & Lists</b>
+        </a>
         </font>
     </div>
-
+    
     <!-- 주문 -->
     <div id="returnsAndOrders" style="margin:5px; display: inline-block">
         <font size = "2" color="white">
@@ -187,12 +193,12 @@
     <!-- 장바구니 -->
     <div id="carts" style="margin: 5px; display: inline-block">
     <a>
-        <img src="./images/cart.JPG" width="40", height="40" style="vertical-align:middle" alt="cart">
+        <img src="./images/cart.JPG" style="vertical-align:middle;width: 40;height: 40;" alt="cart">
     </a>
     <font size = "4">
         <b>Cart</b><br>
-        </form>
         </font>
+    </div>
     </div>
 </div>
 
@@ -226,107 +232,112 @@
             <span></span>
         </label>
         <div class="sidebar">
+            <div class="status-ico">
             <br>
             <br>
             <br>
             <br>
             <ul>
-                <li>
+                <li>&nbsp;
                     <a href="#" >Hello, Sign in</a><br><br>
                 </li>
-                <li>
+                <li>&nbsp;
                     <a href="#" >Digital Content & Devices</a>
                 </li>
-                <li>
+                <li>&nbsp;
                     <a href="#" >Amazon Music</a>
                 </li>
-                <li>
+                <li>&nbsp;
                     <a href="#" >Kindle E-readers & Books</a>
                 </li>
-                <li>
+                <li>&nbsp;
                     <a href="#" >Appstore for Android</a><br><br>
                 </li>
-                <li>
+                <li>&nbsp;
                     <a href="#" >Shop By Department</a>
                 </li>
-                <li>
+                <li>&nbsp;
                     <a href="#" >Electronics</a>
                 </li>
-                <li>
+                <li>&nbsp;
                     <a href="#">Computers</a>
                 </li>
-                <li>
+                <li>&nbsp;
                     <a href="#" >Smart Home</a>
                 </li>
-                <li>
+                <li>&nbsp;
                     <a href="#" >Arts & Crafts</a>
                 </li>
-                <li>
+                <li>&nbsp;
                     <a href="#" >See All</a><br><br>
                 </li>
-                <li>
+                <li>&nbsp;
                     <a href="#" >Programs & Features</a>
                 </li>
-                <li>
+                <li>&nbsp;
                     <a href="#">Gift Cards</a>
                 </li>
-                <li>
+                <li>&nbsp;
                         <a href="#">#FoundItOnAmazon</a>
                 </li>
-                <li>
+                <li>&nbsp;
                         <a href="#">Amazon Live</a>
                 </li>
-                <li>
+                <li>&nbsp;
                         <a href="#">International Shopping</a>
                 </li>
-                <li>
+                <li>&nbsp;
                         <a href="#">See All</a><br><br>
                 </li>
-                <li>
+                <li>&nbsp;
                         <a href="#">Help & Settings</a>
                 </li>
-                <li>
+                <li>&nbsp;
                         <a href="#">Your Account</a>
                 </li>
-                <li>
+                <li>&nbsp;
                         <a href="#">English</a>
                 </li>
-                <li>
+                <li>&nbsp;
                         <a href="#">United States</a>
                 </li>
-                <li>
+                <li>&nbsp;
                         <a href="#">Customer Service</a><br>
-                </li><li>
+                </li>
+                <li>&nbsp;
                         <a href="#">Sign In</a>
                 </li>
             </ul>
+        </div>
         </div>
     </div>
 
     <!-- 사이드바가 아닌 부분 -->
     <div id="notsideBar">
-        <div style="display: inline-block" OnClick="location.href ='https://www.amazon.com/international-sales-offers/b/?ie=UTF8&node=15529609011&ref_=nav_cs_gb_intl_52df97a2eee74206a8343034e85cd058'"> Today's Deals </div> &nbsp; 
-        <div style="display: inline-block" OnClick="location.href ='https://www.amazon.com/gp/help/customer/display.html?nodeId=508510&ref_=nav_cs_customerservice_2bf4fe8c5ec54e6bae2d1c24043f012b'"> Customer Service </div> &nbsp; 
-        <div style="display: inline-block" OnClick="location.href ='https://www.amazon.com/gift-cards/b/?ie=UTF8&node=2238192011&ref_=nav_cs_gc_4fb606b1a14b44e4823e00c03fc71f47'"> Gift Cards </div> &nbsp; 
-        <div style="display: inline-block" OnClick="location.href ='https://www.amazon.com/b/?_encoding=UTF8&ld=AZUSSOA-sell&node=12766669011&ref_=nav_cs_sell_9321d964d1ab428b8d83e204c043fc01'"> Sell </div> &nbsp; 
-        <div style="display: inline-block" OnClick="location.href ='https://www.amazon.com/registries?_encoding=UTF8&redirect=true&ref_=nav_cs_registry_1c421982e26d4ec48ca364be68f201b5'"
-        > Registry</div>
-         <div id ="amazonsResponse" style="display: inline-block" OnClick="location.href ='https://www.aboutamazon.com/company-news/amazons-actions-to-help-employees-communities-and-customers-affected-by-covid-19/?_encoding=UTF8&token=GW&utm_content=COVID-19_roundup&utm_medium=swm&utm_source=gateway&utm_term=gw03162020&ref_=nav_swm_undefined&pf_rd_p=cf6260e5-93a9-45ad-9653-d1fc95751fac&pf_rd_s=nav-sitewide-msg-text-export&pf_rd_t=4201&pf_rd_i=navbar-4201&pf_rd_m=ATVPDKIKX0DER&pf_rd_r=C045QSGNV9P6E7SYVE0S'">
-         <b>Amazon's response to COVID-19 </b></div>
+        <a href="https://www.amazon.com/international-sales-offers/b/?ie=UTF8&node=15529609011&ref_=nav_cs_gb_intl_52df97a2eee74206a8343034e85cd058">Today's Deals</a>&nbsp;&nbsp;&nbsp;
+        <a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=508510&ref_=nav_cs_customerservice_2bf4fe8c5ec54e6bae2d1c24043f012b">Customer Service</a>&nbsp;&nbsp;&nbsp;
+        <a href="https://www.amazon.com/gift-cards/b/?ie=UTF8&node=2238192011&ref_=nav_cs_gc_4fb606b1a14b44e4823e00c03fc71f47">Gift Cards</a>&nbsp;&nbsp;&nbsp;
+        <a href="https://www.amazon.com/b/?_encoding=UTF8&ld=AZUSSOA-sell&node=12766669011&ref_=nav_cs_sell_9321d964d1ab428b8d83e204c043fc01">Today's Deals</a>&nbsp;&nbsp;&nbsp;
+        <a href="https://www.amazon.com/registries?_encoding=UTF8&redirect=true&ref_=nav_cs_registry_1c421982e26d4ec48ca364be68f201b5">Sell</a>&nbsp;&nbsp;&nbsp;
+        
+        <div id="amazonsResponse">
+        <a href="https://www.aboutamazon.com/company-news/amazons-actions-to-help-employees-communities-and-customers-affected-by-covid-19/?_encoding=UTF8&token=GW&utm_content=COVID-19_roundup&utm_medium=swm&utm_source=gateway&utm_term=gw03162020&ref_=nav_swm_undefined&pf_rd_p=cf6260e5-93a9-45ad-9653-d1fc95751fac&pf_rd_s=nav-sitewide-msg-text-export&pf_rd_t=4201&pf_rd_i=navbar-4201&pf_rd_m=ATVPDKIKX0DER&pf_rd_r=C045QSGNV9P6E7SYVE0S">Amazon's response to COVID-19</a>
         </div>
+    </div>
 </font>
 
-</header>
+</header></b>
 
 <body>
 
-<!-- SECTION 1, 슬라이드 배경이 바뀌는 부분-->
-<div id="swipeAlert" style="color:black">
-<br><b>Try to swipe!</b>
-<font size = 2px>
-<br>하단의 이미지를 오른쪽, 왼쪽으로 자유롭게 넘겨보세요<br><br>
-</font>
+<!-- SECTION 1, 슬라이드 배경이 바뀌는 부분--><b>
+<div class="swipeAlert" style="color:black">
+    <b>Try to swipe!</b>
+    <font size = "2px">
+    <br>하단의 아이콘을 오른쪽, 왼쪽으로 자유롭게 넘겨보세요<br><br>
+    </font>
 </div>
+
 <div id="section01">
     <!-- 섹션 1 기본 설정 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
@@ -365,12 +376,12 @@
         });
     </script>
 
-</div>
+</div></b>
 
-<font color="black" size="4.5px"><b>
-<!-- SECTION 2-1, 8개의 레이아웃 상단 -->
-<div id="layoutBg">
-    <div id="layoutPhotoSetting">
+<font color="black" size="4.5px"><font>
+<!-- SECTION 2-1, 8개의 레이아웃 상단 --><b>
+<div class="layoutBg">
+    <div class="layoutPhotoSetting">
         <div style="text-align:left;">
             <br>&nbsp; Find your ideal<br><br>
         </div>
@@ -386,7 +397,7 @@
         </div>
     </div>
 
-    <div id="layoutPhotoSetting">
+    <div class="layoutPhotoSetting">
         <div style="text-align:left;">
             <br>&nbsp; Computers & Accessories<br><br>
         </div>
@@ -402,7 +413,7 @@
         </div>
     </div>
 
-    <div id="layoutPhotoSetting">
+    <div class="layoutPhotoSetting">
         <div style="text-align:left;">
             <br>&nbsp; Beauty picks<br><br>
         </div>
@@ -418,22 +429,22 @@
         </div>
     </div>
 
-    <div id="layoutPhotoSetting">
+    <div class="layoutPhotoSetting">
         <div style="text-align:left;">
             <br>&nbsp; Sign in for the best experience<br><br>
         </div>
         <div>
-            <button class="favorite styled" onclick="javascript:btn()" type="button" style="WIDTH: 230pt; HEIGHT:20pt; background-color:#foc74a;"> Sign in Securely</button><br><br>
+            <button class="favorite styled" onclick="javascript:btn()" type="button" style="WIDTH: 230pt; HEIGHT:20pt;" > Sign in Securely</button><br><br>
             <a href="https://www.amazon.com/b?node=20338496011&pf_rd_r=CFFHQ58ZAE1X94Z4E4RA&pf_rd_p=696ad652-44a2-497e-883b-b1ed606f2732&pd_rd_r=daf32fed-245c-43bb-a3f7-d0c00c7cdb39&pd_rd_w=q0VJa&pd_rd_wg=aXKlc&ref_=pd_gw_unk">
             <img src="images/sec1pic4.JPG" style="width: 280px; height: 250px;">
             </a>
         </div>
     </div>
-</div>
+</div></b>
 
-<!-- SECTION 2-1, 8개의 레이아웃 하단 -->
-<div id="layoutBg">
-    <div id="layoutPhotoSetting">
+<!-- SECTION 2-1, 8개의 레이아웃 하단 --><b>
+<div class="layoutBg">
+    <div class="layoutPhotoSetting">
         <div style="text-align:left;">
             <br>&nbsp; Shop top categories<br><br>
         </div>
@@ -449,7 +460,7 @@
         </div>
     </div>
 
-    <div id="layoutPhotoSetting">
+    <div class="layoutPhotoSetting">
         <div style="text-align:left;">
             <br>&nbsp; Amazon Basics<br><br>
         </div>
@@ -465,7 +476,7 @@
         </div>
     </div>
 
-    <div id="layoutPhotoSetting">
+    <div class="layoutPhotoSetting">
         <div style="text-align:left;">
             <br>&nbsp; Shop by Category<br><br>
         </div>
@@ -481,7 +492,7 @@
         </div>
     </div>
 
-    <div id="layoutPhotoSetting">
+    <div class="layoutPhotoSetting">
         <div style="text-align:left;">
             <br>&nbsp; Get fit at home<br><br>
         </div>
@@ -496,15 +507,15 @@
             </a>
         </div>
     </div>
-</div>
+</div></b>
 
 <!-- SECTION 3, Discover Amazon-->
-<div id="swipeAlert" style="color:black">
+<div class="swipeAlert" style="color:black">
     <b>Try to swipe!</b>
-    <font size = 2px>
+    <font size = "2px">
     <br>하단의 아이콘을 오른쪽, 왼쪽으로 자유롭게 넘겨보세요<br><br>
     </font>
-    </div>
+</div>
 <div id="section03">
     <!-- 섹션 3 기본 설정 -->
     <style type="text/css">
@@ -521,7 +532,7 @@
     </style>
 
     <!-- 아이콘 슬라이드 -->
-    <div id="layoutBg">
+    <div class="layoutBg">
         <div id="layoutPhotoSetting2">
         <div class="swiper-container2">
             <div class="swiper-wrapper">
@@ -587,8 +598,8 @@
     </div>
 </div>
 
-<!-- SECTION 5, 4개의 레이아웃 -->
-<div id="layoutBg">
+<!-- SECTION 5, 4개의 레이아웃 --><b>
+<div class="layoutBg">
     <div id="layoutPhotoSetting">
         <div style="text-align:left;">
             <br>&nbsp; Comfy styles for her<br><br>
@@ -605,7 +616,7 @@
         </div>
     </div>
 
-    <div id="layoutPhotoSetting">
+    <div class="layoutPhotoSetting">
         <div style="text-align:left;">
             <br>&nbsp; Shop Laptops & Tablets<br><br>
         </div>
@@ -621,7 +632,7 @@
         </div>
     </div>
 
-    <div id="layoutPhotoSetting">
+    <div class="layoutPhotoSetting">
         <div style="text-align:left;">
             <br>&nbsp; Explore home bedding<br><br>
         </div>
@@ -637,7 +648,7 @@
         </div>
     </div>
 
-    <div id="layoutPhotoSetting">
+    <div class="layoutPhotoSetting">
         <div style="text-align:left;">
             <br>&nbsp; Create with strip lights<br><br>
         </div>
@@ -652,14 +663,14 @@
             </a>
         </div>
     </div>
-</div>
-
-</b></font>
-
-<!-- 햄버거 바를 클릭하면 나오는 기능 -->
-
+</div></b>
+</font>
 
 <!-- FOOTER -->
+<!-- DO NOT INCLUDE -->
+<div class="page-content">
+</div>
+
 </body>
 </font>
 </html>
