@@ -123,7 +123,7 @@
               <option> Toys & Games </option>
               <option> Video Games </option>
             </select>
-        <input type="text" size="85" style="font-size:12pt; color:black;">
+        <input type="text" size="102" style="font-size:12pt; color:black;">
         <button>
             <a>
                 <img src="./images/search.JPG" style="vertical-align:middle" width="25px"; height="25px"; alt="검색 아이콘" style="display: inline-block">
@@ -218,6 +218,12 @@
 <body>
 
 <!-- SECTION 1, 슬라이드 배경이 바뀌는 부분-->
+<div id="swipeAlert" style="color:black">
+<br><b>Try to swipe!</b>
+<font size = 2px>
+<br>하단의 이미지를 오른쪽, 왼쪽으로 자유롭게 넘겨보세요<br><br>
+</font>
+</div>
 <div id="section01">
     <!-- 섹션 1 기본 설정 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
@@ -390,69 +396,92 @@
 </div>
 
 <!-- SECTION 3, Discover Amazon-->
-<div id="layoutBg">
-    <div id="discoverAmazon">
-        Discover amazon
+<div id="swipeAlert" style="color:black">
+    <b>Try to swipe!</b>
+    <font size = 2px>
+    <br>하단의 아이콘을 오른쪽, 왼쪽으로 자유롭게 넘겨보세요<br><br>
+    </font>
     </div>
-    <div id="layoutPhotoSetting2">
-      <!-- Swiper -->
-      <div id="lalala">
-      <div class="swiper-container2">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide swiper-slide-active">
-                <a>
-                    <img src="./images/ama01.jpg" style="width:200px; height: 200px;">
-                </a>
-            </div>
-            <div class="swiper-slide swiper-slide-active">
-                <a>
-                    <img src="./images/ama02.jpg" style="width:200px; height: 200px;">
-                </a>
-            </div>
-            <div class="swiper-slide swiper-slide-active">
-                <a>
-                    <img src="./images/ama03.jpg" style="width:200px; height: 200px;">
-                </a>
-            </div>
-            <div class="swiper-slide swiper-slide-active">
-                <a>
-                    <img src="./images/ama04.jpg" style="width:200px; height: 200px;">
-                </a>
-            </div>
-
-            <div class="swiper-slide swiper-slide-active">
-                <a>
-                    <img src="./images/ama05.jpg" style="width:200px; height: 200px;">
-                </a>
-            </div>
-        </div>
-    </div>
-    
-      <!-- Swiper JS -->
-      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-      <!-- Initialize Swiper -->
-      <script>
-        var swiper = new Swiper('.swiper-container2', {
-          slidesPerView: 4,
-          spaceBetween: 30,
-          centeredSlides: true,
-          pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-          },
-        });
-      </script>
-
+<div id="section03">
+    <!-- 섹션 3 기본 설정 -->
     <style type="text/css">
         .swiper-container2 {
+            margin: 0 auto;
+            padding: 0 auto;
+            width: 1300px;;
+            height: 230px;
+            border: 0px;
+            float: left;
+            margin-left: 10px;
+            text-align: center;
+        }
+    </style>
+
+    <!-- 아이콘 슬라이드 -->
+    <div id="layoutBg">
+        <div id="layoutPhotoSetting2">
+        <div class="swiper-container2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide-active">
+                    <a href="https://www.amazon.com/gp/customer-preferences/select-language/ref=aistrust2?pf_rd_r=JSJVJVPHZXJQCNXBSA36&pf_rd_p=2286c657-220a-424c-866a-53ed3062937a&pd_rd_r=aa1d3718-d9fe-4813-bce9-44ce68ec44b7&pd_rd_w=nVaXH&pd_rd_wg=5NxkY&ref_=pd_gw_unkhttps://www.amazon.com/gp/customer-preferences/select-language/ref=aistrust2?pf_rd_r=JSJVJVPHZXJQCNXBSA36&pf_rd_p=2286c657-220a-424c-866a-53ed3062937a&pd_rd_r=aa1d3718-d9fe-4813-bce9-44ce68ec44b7&pd_rd_w=nVaXH&pd_rd_wg=5NxkY&ref_=pd_gw_unk">
+                        <img src="./images/ama01.jpg" style="width:230px; height: 230px; margin-left: -1000px; border: 0px;">
+                    </a>
+                </div>
+                <div class="swiper-slide swiper-slide-active">
+                    <a href="https://www.amazon.com/gp/customer-preferences/select-currency/ref=aistrust3?pf_rd_r=JSJVJVPHZXJQCNXBSA36&pf_rd_p=2286c657-220a-424c-866a-53ed3062937a&pd_rd_r=aa1d3718-d9fe-4813-bce9-44ce68ec44b7&pd_rd_w=nVaXH&pd_rd_wg=5NxkY&ref_=pd_gw_unk">
+                        <img src="./images/ama02.jpg" style="width:230px; height: 230px; margin-left: -950px; border: 0px;">
+                    </a>
+                </div>
+                <div class="swiper-slide swiper-slide-active">
+                    <a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=201132710&ref=aistrust4&pf_rd_r=JSJVJVPHZXJQCNXBSA36&pf_rd_p=2286c657-220a-424c-866a-53ed3062937a&pd_rd_r=aa1d3718-d9fe-4813-bce9-44ce68ec44b7&pd_rd_w=nVaXH&pd_rd_wg=5NxkY&ref_=pd_gw_unk">
+                        <img src="./images/ama03.jpg" style="width:230px; height: 230px; margin-left: -900px; border: 0px;">
+                    </a>
+                </div>
+                <div class="swiper-slide swiper-slide-active">
+                    <a href="https://www.amazon.com/gp/help/customer/display.html/ref=aistrust5?ie=UTF8&nodeId=201910710&pf_rd_r=JSJVJVPHZXJQCNXBSA36&pf_rd_p=2286c657-220a-424c-866a-53ed3062937a&pd_rd_r=aa1d3718-d9fe-4813-bce9-44ce68ec44b7&pd_rd_w=nVaXH&pd_rd_wg=5NxkY&ref_=pd_gw_unk">
+                        <img src="./images/ama04.jpg" style="width:230px; height: 230px; margin-left: -850px; border: 0px;">
+                    </a>
+                </div>
+                <div class="swiper-slide swiper-slide-active">
+                    <a href="https://www.amazon.com/ap/signin?_encoding=UTF8&accountStatusPolicy=P1&openid.assoc_handle=usflex&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fgp%2Fcss%2Forder-history%3Fie%3DUTF8%26pd_rd_r%3Daa1d3718-d9fe-4813-bce9-44ce68ec44b7%26pd_rd_w%3DnVaXH%26pd_rd_wg%3D5NxkY%26ref_%3Dpd_gw_unk&pageId=webcs-yourorder&showRmrMe=1">
+                        <img src="./images/ama05.jpg" style="width:230px; height: 230px; margin-left: -800px; border: 0px;">
+                    </a>
+                </div>
+                <div class="swiper-slide swiper-slide-active">
+                    <a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=508510&ref=aistrust7&pf_rd_r=JSJVJVPHZXJQCNXBSA36&pf_rd_p=2286c657-220a-424c-866a-53ed3062937a&pd_rd_r=aa1d3718-d9fe-4813-bce9-44ce68ec44b7&pd_rd_w=nVaXH&pd_rd_wg=5NxkY&ref_=pd_gw_unk">
+                        <img src="./images/ama06.jpg" style="width:230px; height: 230px; margin-left: -750px; border: 0px;">
+                    </a>
+                </div>
+            </div>
+        
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper('.swiper-container2', {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            centeredSlides: true,
+            pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            },
+            });
+        </script>
+
+        <style type="text/css">
+            .swiper-container2 {
             margin: 0;
             width: 1520px;;
             height: 230px;
             border: 0px;
-        }
-    </style>
+            background-color: white;
+            }
+        </style>
+
+        </div>
     </div>
-</div>
+    </div>
 </div>
 
 <!-- SECTION 5, 4개의 레이아웃 -->
@@ -522,10 +551,7 @@
     </div>
 </div>
 
-
 </b></font>
-
-
 
 <!-- FOOTER -->
 </body>
