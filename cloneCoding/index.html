@@ -68,6 +68,7 @@
 <header>
 
 <!-- 헤더의 상단 -->
+<font color="white">
 <div id="box">
     <div class="top_box">
 
@@ -173,13 +174,13 @@
     </div>
 
     <!-- 배송할 지역 -->
-    <div id="whereto" style="margin:5px; display: inline-block">
-        <font size = "2">&nbsp;&nbsp;&nbsp;
-        <a href="https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3Fref_%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&">
+    <div id="whereto" style="margin:5px; display: inline-block;">
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3Fref_%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&" style="color: white;">
         Hello, Sign in<br>
         <b>Accounts & Lists</b>
         </a>
-        </font>
+        
     </div>
     
     <!-- 주문 -->
@@ -201,131 +202,129 @@
     </div>
     </div>
 </div>
-
-<!-- 헤더의 하단 -->
-<font size = "3"> &nbsp; 
-
-
-<div id = "header_box">
-    <div class="bottom_box">
- <!-- 사이드바 -->
-    <div id="sidebar" style="z-index:9998; font: white;">
-        <style>
-            input[id="menuicon"] {display:none;}
-            input[id="menuicon"] + label {display:block;margin-top:5px;width:3px;height:3px;padding:9px;position:relative;cursor:pointer;}
-            input[id="menuicon"] + label span {display:block;position:absolute;width:100%;height:5px;background:white;transition:all .35s;}
-            input[id="menuicon"] + label span:nth-child(1) {top:0;}
-            input[id="menuicon"] + label span:nth-child(2) {top:50%;transform:translateY(-50%);}
-            input[id="menuicon"] + label span:nth-child(3) {bottom:0;}
-            input[id="menuicon"]:checked + label {z-index:2;}
-            input[id="menuicon"]:checked + label span {background:white;}
-            input[id="menuicon"]:checked + label span:nth-child(1) {top:50%;transform:translateY(-50%) rotate(45deg);}
-            input[id="menuicon"]:checked + label span:nth-child(2) {opacity:0;}
-            input[id="menuicon"]:checked + label span:nth-child(3) {bottom:50%;transform:translateY(50%) rotate(-45deg);}
-            div[class="sidebar"] {width:300px;height:100%;background:#232F3E;position:fixed;top:0;left:-300px;z-index:1;transition:all .35s;}
-            input[id="menuicon"]:checked + label + div {left:0;}
-        </style>
-        <input type="checkbox" id="menuicon">
-        <label for="menuicon">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-        <div class="sidebar">
-            <div class="status-ico">
-            <br>
-            <br>
-            <br>
-            <br>
-            <ul>
-                <li>&nbsp;
-                    <a href="#" >Hello, Sign in</a><br><br>
-                </li>
-                <li>&nbsp;
-                    <a href="#" >Digital Content & Devices</a>
-                </li>
-                <li>&nbsp;
-                    <a href="#" >Amazon Music</a>
-                </li>
-                <li>&nbsp;
-                    <a href="#" >Kindle E-readers & Books</a>
-                </li>
-                <li>&nbsp;
-                    <a href="#" >Appstore for Android</a><br><br>
-                </li>
-                <li>&nbsp;
-                    <a href="#" >Shop By Department</a>
-                </li>
-                <li>&nbsp;
-                    <a href="#" >Electronics</a>
-                </li>
-                <li>&nbsp;
-                    <a href="#">Computers</a>
-                </li>
-                <li>&nbsp;
-                    <a href="#" >Smart Home</a>
-                </li>
-                <li>&nbsp;
-                    <a href="#" >Arts & Crafts</a>
-                </li>
-                <li>&nbsp;
-                    <a href="#" >See All</a><br><br>
-                </li>
-                <li>&nbsp;
-                    <a href="#" >Programs & Features</a>
-                </li>
-                <li>&nbsp;
-                    <a href="#">Gift Cards</a>
-                </li>
-                <li>&nbsp;
-                        <a href="#">#FoundItOnAmazon</a>
-                </li>
-                <li>&nbsp;
-                        <a href="#">Amazon Live</a>
-                </li>
-                <li>&nbsp;
-                        <a href="#">International Shopping</a>
-                </li>
-                <li>&nbsp;
-                        <a href="#">See All</a><br><br>
-                </li>
-                <li>&nbsp;
-                        <a href="#">Help & Settings</a>
-                </li>
-                <li>&nbsp;
-                        <a href="#">Your Account</a>
-                </li>
-                <li>&nbsp;
-                        <a href="#">English</a>
-                </li>
-                <li>&nbsp;
-                        <a href="#">United States</a>
-                </li>
-                <li>&nbsp;
-                        <a href="#">Customer Service</a><br>
-                </li>
-                <li>&nbsp;
-                        <a href="#">Sign In</a>
-                </li>
-            </ul>
-        </div>
-        </div>
-    </div>
-
-    <!-- 사이드바가 아닌 부분 -->
-    <div id="notsideBar">
-        <a href="https://www.amazon.com/international-sales-offers/b/?ie=UTF8&node=15529609011&ref_=nav_cs_gb_intl_52df97a2eee74206a8343034e85cd058">Today's Deals</a>&nbsp;&nbsp;&nbsp;
-        <a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=508510&ref_=nav_cs_customerservice_2bf4fe8c5ec54e6bae2d1c24043f012b">Customer Service</a>&nbsp;&nbsp;&nbsp;
-        <a href="https://www.amazon.com/gift-cards/b/?ie=UTF8&node=2238192011&ref_=nav_cs_gc_4fb606b1a14b44e4823e00c03fc71f47">Gift Cards</a>&nbsp;&nbsp;&nbsp;
-        <a href="https://www.amazon.com/b/?_encoding=UTF8&ld=AZUSSOA-sell&node=12766669011&ref_=nav_cs_sell_9321d964d1ab428b8d83e204c043fc01">Today's Deals</a>&nbsp;&nbsp;&nbsp;
-        <a href="https://www.amazon.com/registries?_encoding=UTF8&redirect=true&ref_=nav_cs_registry_1c421982e26d4ec48ca364be68f201b5">Sell</a>&nbsp;&nbsp;&nbsp;
-        
-        <div id="amazonsResponse">
-        <a href="https://www.aboutamazon.com/company-news/amazons-actions-to-help-employees-communities-and-customers-affected-by-covid-19/?_encoding=UTF8&token=GW&utm_content=COVID-19_roundup&utm_medium=swm&utm_source=gateway&utm_term=gw03162020&ref_=nav_swm_undefined&pf_rd_p=cf6260e5-93a9-45ad-9653-d1fc95751fac&pf_rd_s=nav-sitewide-msg-text-export&pf_rd_t=4201&pf_rd_i=navbar-4201&pf_rd_m=ATVPDKIKX0DER&pf_rd_r=C045QSGNV9P6E7SYVE0S">Amazon's response to COVID-19</a>
-        </div>
-    </div>
 </font>
 
+<!-- 헤더의 하단 -->
+<font size = "3" color="white"> &nbsp; 
+    <div id = "header_box">
+        <div class="bottom_box">
+     <!-- 사이드바 -->
+        <div id="sidebar" style="z-index:9998; font: white;">
+            <style>
+                input[id="menuicon"] {display:none;}
+                input[id="menuicon"] + label {display:block;margin-top:5px;width:3px;height:3px;padding:9px;position:relative;cursor:pointer;}
+                input[id="menuicon"] + label span {display:block;position:absolute;width:100%;height:5px;background:white;transition:all .35s;}
+                input[id="menuicon"] + label span:nth-child(1) {top:0;}
+                input[id="menuicon"] + label span:nth-child(2) {top:50%;transform:translateY(-50%);}
+                input[id="menuicon"] + label span:nth-child(3) {bottom:0;}
+                input[id="menuicon"]:checked + label {z-index:2;}
+                input[id="menuicon"]:checked + label span {background:white;}
+                input[id="menuicon"]:checked + label span:nth-child(1) {top:50%;transform:translateY(-50%) rotate(45deg);}
+                input[id="menuicon"]:checked + label span:nth-child(2) {opacity:0;}
+                input[id="menuicon"]:checked + label span:nth-child(3) {bottom:50%;transform:translateY(50%) rotate(-45deg);}
+                div[class="sidebar"] {width:300px;height:100%;background:#232F3E;position:fixed;top:0;left:-300px;z-index:1;transition:all .35s;}
+                input[id="menuicon"]:checked + label + div {left:0;}
+            </style>
+            <input type="checkbox" id="menuicon">
+            <label for="menuicon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <div class="sidebar">
+                <div class="status-ico">
+                <br>
+                <br>
+                <br>
+                <br>
+                <ul>
+                    <li>&nbsp;
+                        <a href="#" >Hello, Sign in</a><br><br>
+                    </li>
+                    <li>&nbsp;
+                        <a href="#" >Digital Content & Devices</a>
+                    </li>
+                    <li>&nbsp;
+                        <a href="#" >Amazon Music</a>
+                    </li>
+                    <li>&nbsp;
+                        <a href="#" >Kindle E-readers & Books</a>
+                    </li>
+                    <li>&nbsp;
+                        <a href="#" >Appstore for Android</a><br><br>
+                    </li>
+                    <li>&nbsp;
+                        <a href="#" >Shop By Department</a>
+                    </li>
+                    <li>&nbsp;
+                        <a href="#" >Electronics</a>
+                    </li>
+                    <li>&nbsp;
+                        <a href="#">Computers</a>
+                    </li>
+                    <li>&nbsp;
+                        <a href="#" >Smart Home</a>
+                    </li>
+                    <li>&nbsp;
+                        <a href="#" >Arts & Crafts</a>
+                    </li>
+                    <li>&nbsp;
+                        <a href="#" >See All</a><br><br>
+                    </li>
+                    <li>&nbsp;
+                        <a href="#" >Programs & Features</a>
+                    </li>
+                    <li>&nbsp;
+                        <a href="#">Gift Cards</a>
+                    </li>
+                    <li>&nbsp;
+                            <a href="#">#FoundItOnAmazon</a>
+                    </li>
+                    <li>&nbsp;
+                            <a href="#">Amazon Live</a>
+                    </li>
+                    <li>&nbsp;
+                            <a href="#">International Shopping</a>
+                    </li>
+                    <li>&nbsp;
+                            <a href="#">See All</a><br><br>
+                    </li>
+                    <li>&nbsp;
+                            <a href="#">Help & Settings</a>
+                    </li>
+                    <li>&nbsp;
+                            <a href="#">Your Account</a>
+                    </li>
+                    <li>&nbsp;
+                            <a href="#">English</a>
+                    </li>
+                    <li>&nbsp;
+                            <a href="#">United States</a>
+                    </li>
+                    <li>&nbsp;
+                            <a href="#">Customer Service</a><br>
+                    </li>
+                    <li>&nbsp;
+                            <a href="#">Sign In</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    
+        <!-- 사이드바가 아닌 부분 -->
+        <div id="notsideBar">
+            <a href="https://www.amazon.com/international-sales-offers/b/?ie=UTF8&node=15529609011&ref_=nav_cs_gb_intl_52df97a2eee74206a8343034e85cd058" style="color:white">Today's Deals</a>&nbsp;&nbsp;&nbsp;
+            <a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=508510&ref_=nav_cs_customerservice_2bf4fe8c5ec54e6bae2d1c24043f012b" style="color:white">Customer Service</a>&nbsp;&nbsp;&nbsp;
+            <a href="https://www.amazon.com/gift-cards/b/?ie=UTF8&node=2238192011&ref_=nav_cs_gc_4fb606b1a14b44e4823e00c03fc71f47" style="color:white">Gift Cards</a>&nbsp;&nbsp;&nbsp;
+            <a href="https://www.amazon.com/b/?_encoding=UTF8&ld=AZUSSOA-sell&node=12766669011&ref_=nav_cs_sell_9321d964d1ab428b8d83e204c043fc01" style="color:white">Today's Deals</a>&nbsp;&nbsp;&nbsp;
+            <a href="https://www.amazon.com/registries?_encoding=UTF8&redirect=true&ref_=nav_cs_registry_1c421982e26d4ec48ca364be68f201b5" style="color:white">Sell</a>&nbsp;&nbsp;&nbsp;
+            
+            <div id="amazonsResponse">
+            <a href="https://www.aboutamazon.com/company-news/amazons-actions-to-help-employees-communities-and-customers-affected-by-covid-19/?_encoding=UTF8&token=GW&utm_content=COVID-19_roundup&utm_medium=swm&utm_source=gateway&utm_term=gw03162020&ref_=nav_swm_undefined&pf_rd_p=cf6260e5-93a9-45ad-9653-d1fc95751fac&pf_rd_s=nav-sitewide-msg-text-export&pf_rd_t=4201&pf_rd_i=navbar-4201&pf_rd_m=ATVPDKIKX0DER&pf_rd_r=C045QSGNV9P6E7SYVE0S" style="color:white">Amazon's response to COVID-19</a>
+            </div>
+        </div>
+</font>
 </header></b>
 
 <body>
@@ -378,7 +377,8 @@
 
 </div></b>
 
-<font color="black" size="4.5px"><font>
+<body size="4.5px">
+<font color="black">
 <!-- SECTION 2-1, 8개의 레이아웃 상단 --><b>
 <div class="layoutBg">
     <div class="layoutPhotoSetting">
@@ -390,7 +390,7 @@
             <img src="images/sec1pic1.JPG" style="width: 280px; height: 300px;">
             </a>
         </div>
-        <div style="text-align:left; font-size: 2px;">
+        <div style="text-align:left; font-size: 2px; font: black;">
             <a href="https://www.amazon.com/s?i=electronics&bbn=1266092011&rh=n%3A172282%2Cn%3A1266092011%2Cn%3A172659&field-shipping_option-bin=3242350011&pf_rd_i=16225009011&pf_rd_m=ATVPDKIKX0DER&pf_rd_p=85a9188d-dbd5-424e-9512-339a1227d37c&pf_rd_r=CFFHQ58ZAE1X94Z4E4RA&pf_rd_s=merchandised-search-5&pf_rd_t=101&qid=1588978526&rnid=1266092011&ref=sr_nr_n_13">
             <br> See more
             </a>
@@ -441,7 +441,8 @@
         </div>
     </div>
 </div></b>
-
+</font>
+<font color="black">
 <!-- SECTION 2-1, 8개의 레이아웃 하단 --><b>
 <div class="layoutBg">
     <div class="layoutPhotoSetting">
@@ -508,7 +509,7 @@
         </div>
     </div>
 </div></b>
-
+</font>
 <!-- SECTION 3, Discover Amazon-->
 <div class="swipeAlert" style="color:black">
     <b>Try to swipe!</b>
@@ -664,7 +665,7 @@
         </div>
     </div>
 </div></b>
-</font>
+
 
 <!-- FOOTER -->
 <!-- DO NOT INCLUDE -->
@@ -672,5 +673,4 @@
 </div>
 
 </body>
-</font>
 </html>

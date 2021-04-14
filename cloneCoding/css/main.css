@@ -38,6 +38,7 @@
 
 header{
 	overflow: hidden;
+
 }
 
 .swiper-container1 {
@@ -145,18 +146,7 @@ a{
 }
 
 
-  a:link {
-	color : white;
-  }
-  a:visited {
-	color : white;
-  }
-  a:hover {
-	color : white;
-  }
-  a:active {
-	color : white;
-  }
+
 
   select {
 	background: transparent;
@@ -182,5 +172,8 @@ a{
 	position:absolute;
 	right: 35px;
 	overflow: hidden;
+}
+
+
 }
 
