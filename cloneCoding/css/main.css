@@ -5,6 +5,9 @@
 	margin-left: 20px;
 }
 
+body{
+	background-color: #EAEDED;
+}
 
 
 .swiper-container {
@@ -66,10 +69,6 @@ header{
 	background-color: white;
 }
 
-.body{
-	font:black;
-	color:black;
-}
 
 #layout01{
 	vertical-align: middle;
@@ -77,21 +76,25 @@ header{
 }
 
 .layoutBg{
-  display: inline-block;
-  display: flex;
-  text-align: center;
-}
-
-.layoutPhotoSetting {
-	overflow: hidden;
+	display: inline-block;
+	display: flex;
 	text-align: center;
-	margin:25px;
-	font: black;
-	background-color: white;
-	flex:1;
-	width: 5%;
-	box-sizing: border-box;
   }
+
+.section02{
+	overflow: hidden;
+	font: black;
+	background-color: #EAEDED;
+	flex:1;;
+	float: left;
+}
+.section04{
+	overflow: hidden;
+	font: black;
+	background-color: #EAEDED;
+	flex:1;;
+	float: left;
+}
 
 #fourLayoutPhotoSetting {
 	background-color: white;
@@ -109,31 +112,26 @@ header{
 	margin: 0 auto;
 }
 
-#layoutPhotoSetting {
-	overflow: hidden;
-	text-align: center;
-	margin: 25px;
-	font: black;
-	background-color: white;
-	flex:1;
-  }
+#sec02box01, #sec02box02, #sec02box03, #sec02box04,#sec02box05, #sec02box06, #sec02box07, #sec02box08,#sec04box01, #sec04box02, #sec04box03, #sec04box04{
+	text-align: middle;
+	border: 1px;
+	margin: 19px;
+	background: white;
+	padding-right: 30px;
+	padding-left: 30px;
+	padding-top: 20px;
+}
 
   #layoutPhotoSetting2{
 	  margin-left: 0px;
 	  padding: 0px;
   }
 
-  #lalala{
-	  background-color: white;
-  }
-
-
  .swipeAlert{
 	  text-align: center;
 	  font-size: 20px;
-	  font: black;
-  }
-
+	  font: black;}
+	  
   
   #sidebar{
 	  position: absolute;
@@ -152,7 +150,6 @@ a{
 #notsideBar{
 	margin-left: 40px;
 }
-
 
 
 
@@ -213,6 +210,7 @@ a{
 	margin-left: 450px;
 	margin-top: -720px;
 }
+
 
 #fs02-01, #fs02-02, #fs02-03, #fs02-04{
 	float: left;
