@@ -1,4 +1,10 @@
 * { font-family: "amazonEmber" !important; }
+#searchbox{
+	position: relative;
+	margin-top: -60px;
+	margin-left: 20px;
+}
+
 
 
 .swiper-container {
@@ -162,18 +168,10 @@ a{
 	padding: 0!important;
   }
 
-#searchbox{
-	position: relative;
-	margin-top: -45px;
-}
-
 
 #rightalign{
 	position:absolute;
 	right: 35px;
 	overflow: hidden;
-}
-
-
 }
 
