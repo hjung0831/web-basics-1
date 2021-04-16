@@ -81,13 +81,6 @@ header{
 	text-align: center;
   }
 
-.section02{
-	overflow: hidden;
-	font: black;
-	background-color: #EAEDED;
-	flex:1;;
-	float: left;
-}
 .section04{
 	overflow: hidden;
 	font: black;
@@ -112,7 +105,15 @@ header{
 	margin: 0 auto;
 }
 
-#sec02box01, #sec02box02, #sec02box03, #sec02box04,#sec02box05, #sec02box06, #sec02box07, #sec02box08,#sec04box01, #sec04box02, #sec04box03, #sec04box04{
+.section02{
+	overflow: hidden;
+	font: black;
+	background-color: #EAEDED;
+	flex:1;
+	float: left;
+}
+
+#sec02box01, #sec02box02, #sec02box03, #sec02box04, #sec02box05, #sec02box06, #sec02box08,#sec04box01, #sec04box02, #sec04box03, #sec04box04{
 	text-align: middle;
 	border: 1px;
 	margin: 19px;
@@ -120,6 +121,24 @@ header{
 	padding-right: 30px;
 	padding-left: 30px;
 	padding-top: 20px;
+}
+
+#sec02box07, #sec04box01{
+	text-align: middle;
+	border: 1px;
+	margin: 19px;
+	background: white;
+	padding-top: 20px;
+	padding-left: 30px;
+	padding-right: 15px;
+	padding-bottom: 405px;
+}
+
+#sec02box0701, #sec02box0702, #sec02box0703, #sec02box0704, #sec04box0101, #sec04box0102, #sec04box0103, #sec04box0104{
+	text-align: middle;
+	border: 1px;
+	margin: 0px;
+	background: white;
 }
 
   #layoutPhotoSetting2{
