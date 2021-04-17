@@ -113,7 +113,7 @@ header{
 	float: left;
 }
 
-#sec02box01, #sec02box02, #sec02box03, #sec02box04, #sec02box05, #sec02box06, #sec02box08,#sec04box01, #sec04box02, #sec04box03, #sec04box04{
+#sec02box01, #sec02box02, #sec02box03, #sec02box05, #sec02box06, #sec02box07, #sec02box08, #sec04box01, #sec04box02, #sec04box03, #sec04box04{
 	text-align: middle;
 	border: 1px;
 	margin: 19px;
@@ -121,6 +121,20 @@ header{
 	padding-right: 30px;
 	padding-left: 30px;
 	padding-top: 20px;
+}
+
+#sec02box04-01{
+	border: 1px;
+	margin: 19px;
+	background: white;
+	padding-right: 30px;
+	padding-left: 30px;
+	padding-top: 20px;
+}
+
+#sec02box04-01{
+	text-align: center;
+	float: left;
 }
 
 #sec02box07, #sec04box01{
@@ -265,6 +279,7 @@ a{
 
 #bgcolor1{
 	position: relative;
+	
 }
 
 #bgcolor2{

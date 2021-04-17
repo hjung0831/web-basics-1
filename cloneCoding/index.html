@@ -17,7 +17,7 @@
 <link rel="stylesheet" href="./css/main.css">
 
 <!-- 헤더 스타일 지정 -->
-<b><style>
+<style>
     .top_box {
         width: 100%;
         height: 63px;
@@ -33,10 +33,10 @@
         background: #232F3E;
         font : white;
         }
-</style></b>
+</style>
 
 <!-- HEADER -->
-<b><header>
+<header>
     <!-- 헤더의 상단 -->
     <font color="white">
     <div id="box">
@@ -44,7 +44,7 @@
 
         <!-- 로고 이미지를 클릭하면 해당 사이트로 다시 이동하도록 -->
         <div class="logo" style="display: inline-block">
-                <a href="/" class="logo">
+                <a href="./" class="logo">
                     <img src="./images/logo.JPG" width="110" height="46" vspace="10" hspace="10" style="vertical-align:middle" alt="로고">
                 </a>
         </div>
@@ -65,7 +65,6 @@
 
         <!-- 검색창 -->
         <!-- 검색창을 모두 만든 후, 스타일시트를 불러와 아마존의 검색창과 비슷하게 보이도록 -->
-        &nbsp;&nbsp;
         <div id="searchbox">
             <link href="https://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet" />
             <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
@@ -161,22 +160,23 @@
         
         <!-- 주문 -->
         <div id="returnsAndOrders" style="margin:5px; display: inline-block">
+            <a href="https://www.amazon.com/ap/signin?clientContext=132-9349820-5691738&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fyour-orders%2Forders%2Fref%3Dyo_oh_gp_to_ov%3Fref_%3Dnav_orders_first%26_encoding%3DUTF8&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&marketPlaceId=ATVPDKIKX0DER&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&pageId=usflex&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.pape.max_auth_age=900&siteState=clientContext%3D145-0505373-6595463%2CsourceUrl%3Dhttps%253A%252F%252Fwww.amazon.com%252Fyour-orders%252Forders%252Fref%253Dyo_oh_gp_to_ov%253Fref_%253Dnav_orders_first%2526_encoding%253DUTF8%2Csignature%3Do0etbTMxWUKcj6Ck0MUf2NG0WK0j3D">
             <font size = "2" color="white">
             Returns<br>
             <b>& Orders</b>
             </font>
+            </a>
         </div>
 
         <!-- 장바구니 이미지와 문구 -->
         <div id="carts" style="margin: 5px; display: inline-block">
-        <a>
+        <a href="https://www.amazon.com/gp/cart/view.html?ref_=nav_cart" style="color: white;">
             <img src="./images/cart.JPG" style="vertical-align:middle;width: 40;height: 40;" alt="cart">
+            <font size = "4">
+                <b>Cart</b><br>
+            </font>
         </a>
-        <font size = "4">
-            <b>Cart</b><br>
-        </font>
         </div>
-
         </div>
     </div>
     </font>
@@ -310,7 +310,7 @@
     </div>
     </div>
     </font>
-</header></b>
+</header>
 
 <!-- SECTION 1, 슬라이드 배경이 바뀌는 부분-->
 <div class="section01"><b>
@@ -362,7 +362,7 @@
     <div id="sec02box01" style="border: 10px; float: left; ">
         <h4><b>Find your ideal</b></h4>
         <a href="https://www.amazon.com/b?node=16225007011&pf_rd_r=K0EFJMRDV25H536WJ0YS&pf_rd_p=a13f1949-dc1c-4090-9236-ef9627cd9724&pd_rd_r=7c60f949-73aa-4164-931e-41277b403ad3&pd_rd_w=8OUi2&pd_rd_wg=I12Zw&ref_=pd_gw_unk">
-        <img src="./images/sec1pic1.JPG" style="width: 280px; height: 330px;"><br>
+        <img src="./images/sec2pic1.JPG" style="width: 280px; height: 330px;"><br>
         <h5>See more</h5>
         </a>
     </div>
@@ -370,7 +370,7 @@
     <div id="sec02box02" style="border: 10px; float: left;">
         <h4><b>Computers & Accessories</b></h4>
         <a href="https://www.amazon.com/b?node=16225007011&pf_rd_r=XTXXFF2WHRFJW7RDB25Q&pf_rd_p=a13f1949-dc1c-4090-9236-ef9627cd9724&pd_rd_r=90eab18f-8d6c-4fe0-86d5-d5da15f95cc9&pd_rd_w=VcpXw&pd_rd_wg=fDiSw&ref_=pd_gw_unk">
-        <img src="./images/sec1pic2.JPG" style="width: 280px; height: 330px;"><br>
+        <img src="./images/sec2pic2.JPG" style="width: 280px; height: 330px;"><br>
         <h5>See more</h5>
         </a>
     </div>
@@ -378,23 +378,26 @@
     <div id="sec02box03" style="border: 10px; float: left;">
         <h4><b>Beauty picks</b></h4>
         <a href="https://www.amazon.com/b/?node=16225006011&pf_rd_r=K0EFJMRDV25H536WJ0YS&pf_rd_p=4a5ac24a-2f14-4296-8a03-0c034c0a7904&pd_rd_r=7c60f949-73aa-4164-931e-41277b403ad3&pd_rd_w=9puqs&pd_rd_wg=I12Zw&ref_=pd_gw_unk">
-        <img src="./images/sec1pic3.JPG" style="width: 280px; height: 330px;"><br>
+        <img src="./images/sec2pic3.JPG" style="width: 280px; height: 330px;"><br>
         <h5>See more</h5>
         </a>
     </div>
 
-    <div id="sec02box04" style="border: 10px; float: left;">
-        <h4><b>Sign in for the best experience</b></h4>
-        <a href="https://www.amazon.com/b?node=20338496011&pf_rd_r=XTXXFF2WHRFJW7RDB25Q&pf_rd_p=696ad652-44a2-497e-883b-b1ed606f2732&pd_rd_r=90eab18f-8d6c-4fe0-86d5-d5da15f95cc9&pd_rd_w=UGwyp&pd_rd_wg=fDiSw&ref_=pd_gw_unk">
-        <img src="./images/sec1pic4.JPG" style="width: 280px; height: 330px;"><br>
-        <h5>See more</h5>
-        </a>
+    <div id="sec02box04-01" style="border: 10px; float: left; width: 320px; height: 170px;">
+            <h4><b>Sign in for the best experience</b></h4><br><br>
+            <button style="background-color: #F0C454; border-radius: 20px; width: 270px;"> Sign In Securely </button>
+    </div>
+
+    <div id="sec02box04-02">
+    <a href="https://www.amazon.com/b?node=20338496011&pf_rd_r=XTXXFF2WHRFJW7RDB25Q&pf_rd_p=696ad652-44a2-497e-883b-b1ed606f2732&pd_rd_r=90eab18f-8d6c-4fe0-86d5-d5da15f95cc9&pd_rd_w=UGwyp&pd_rd_wg=fDiSw&ref_=pd_gw_unk">
+        <img src="./images/sec2pic4.JPG" style="width: 250px; height: 255px; float: left; margin-left: 60px;"><br>
+    </a>
     </div>
 
     <div id="sec02box05" style="border: 10px; float: left;">
         <h4><b>Shop by Category</b></h4>
         <a href="https://www.amazon.com/b?node=16225005011&pf_rd_r=8DX63B2E64MB7D0Q2CBG&pf_rd_p=e5b0c85f-569c-4c90-a58f-0c0a260e45a0&pd_rd_r=7f3ec7f8-d9c0-4da2-8df3-98f286536ee1&pd_rd_w=qDY5I&pd_rd_wg=goFK4&ref_=pd_gw_unk">
-        <img src="./images/sec1pic5.JPG" style="width: 280px; height: 330px;"><br>
+        <img src="./images/sec2pic5.JPG" style="width: 280px; height: 330px;"><br>
         <h5>Shop now</h5>
         </a>
     </div>
@@ -402,7 +405,7 @@
     <div id="sec02box06" style="border: 10px; float: left;">
         <h4><b>Amazon Basics</b></h4>
         <a href="https://www.amazon.com/s?k=amazonbasics&pd_rd_r=7f3ec7f8-d9c0-4da2-8df3-98f286536ee1&pd_rd_w=Pjsfc&pd_rd_wg=goFK4&pf_rd_p=9349ffb9-3aaa-476f-8532-6a4a5c3da3e7&pf_rd_r=8DX63B2E64MB7D0Q2CBG&ref=pd_gw_unk">
-        <img src="./images/sec1pic6.JPG" style="width: 280px; height: 330px;"><br>
+        <img src="./images/sec2pic6.JPG" style="width: 280px; height: 330px;"><br>
         <h5>See more</h5>
         </a>
     </div>
@@ -412,25 +415,25 @@
         
         <div id="sec02box0701" style="border: 10px; float: left;">
             <a href="https://www.amazon.com/b?node=16225007011&pf_rd_r=CYYEQ1Q7RXV3KZCM63E6&pf_rd_p=e5b0c85f-569c-4c90-a58f-0c0a260e45a0&pd_rd_r=acb8390d-c811-4d0c-893d-95377f0b4cf8&pd_rd_w=nt8Wu&pd_rd_wg=FZuAt&ref_=pd_gw_unk">
-            <img src="./images/sec1pic9part1.JPG" style="width: 140px; height: 130px;"><br>
+            <img src="./images/sec2part7-1.JPG" style="width: 140px; height: 130px;"><br>
             </a>
         </div>
         
         <div id="sec02box0702" style="border: 10px; float: left;">
             <a href="https://www.amazon.com/b?node=16225016011&pf_rd_r=CYYEQ1Q7RXV3KZCM63E6&pf_rd_p=e5b0c85f-569c-4c90-a58f-0c0a260e45a0&pd_rd_r=acb8390d-c811-4d0c-893d-95377f0b4cf8&pd_rd_w=nt8Wu&pd_rd_wg=FZuAt&ref_=pd_gw_unk">
-            <img src="./images/sec1pic9part2.JPG" style="width: 140px; height: 130px;"><br>
+            <img src="./images/sec2part7-2.JPG" style="width: 140px; height: 130px;"><br>
             </a>
         </div>
         
         <div id="sec02box0703" style="border: 10px; float: left;">
             <a href="https://www.amazon.com/b?node=16225005011&pf_rd_r=CYYEQ1Q7RXV3KZCM63E6&pf_rd_p=e5b0c85f-569c-4c90-a58f-0c0a260e45a0&pd_rd_r=acb8390d-c811-4d0c-893d-95377f0b4cf8&pd_rd_w=nt8Wu&pd_rd_wg=FZuAt&ref_=pd_gw_unk">
-            <img src="./images/sec1pic9part3.JPG" style="width: 140px; height: 130px;"><br>
+            <img src="./images/sec2part7-3.JPG" style="width: 140px; height: 130px;"><br>
             </a>
         </div>
         
         <div id="sec02box0704" style="border: 10px; float: left;">
             <a href="https://www.amazon.com/b?node=16225015011&pf_rd_r=CYYEQ1Q7RXV3KZCM63E6&pf_rd_p=e5b0c85f-569c-4c90-a58f-0c0a260e45a0&pd_rd_r=acb8390d-c811-4d0c-893d-95377f0b4cf8&pd_rd_w=nt8Wu&pd_rd_wg=FZuAt&ref_=pd_gw_unk">
-            <img src="./images/sec1pic9part4.JPG" style="width: 140px; height: 130px;"><br>
+            <img src="./images/sec2part7-4.JPG" style="width: 140px; height: 130px;"><br>
             </a>
         </div>
         <a href="https://www.amazon.com/b?node=17938598011&pf_rd_r=S067HDBY13851MDCKHXP&pf_rd_p=e5b0c85f-569c-4c90-a58f-0c0a260e45a0&pd_rd_r=b98f9f93-03c9-41fe-878b-b41b81c02ce9&pd_rd_w=M51oW&pd_rd_wg=gF7Tu&ref_=pd_gw_unk">
@@ -442,7 +445,7 @@
     <div id="sec02box08" style="border: 10px; float: left;">
         <h4><b>Get fit at home</b></h4>
         <a href="https://www.amazon.com/b?node=16225014011&pf_rd_r=2VDPNW7ZD0W6K8BW8H3S&pf_rd_p=152091c3-ff04-4c57-8721-f1423f1e428d&pd_rd_r=43eac8c5-9926-4a59-8664-a38b0024b9b3&pd_rd_w=ZJEbm&pd_rd_wg=aU9i0&ref_=pd_gw_unk">
-        <img src="./images/sec1pic8.JPG" style="width: 280px; height: 330px;"><br>
+        <img src="./images/sec2pic8.JPG" style="width: 280px; height: 330px;"><br>
         <h5>Explore now</h5>
         </a>
     </div>
@@ -543,25 +546,25 @@
         
         <div id="sec04box0101" style="border: 10px; float: left;">
             <a href="https://www.amazon.com/s?k=sweatshirts&i=fashion-womens-intl-ship&pd_rd_r=a3b9205b-cc8b-4a75-b421-4daf2620eda4&pd_rd_w=ktOTU&pd_rd_wg=tNKS8&pf_rd_p=1db13ac4-e486-438e-a9a5-dd6867e4ea95&pf_rd_r=4MAVE29V3W1KHPQ0W6PW&ref=pd_gw_unk">
-            <img src="./images/sec4pic1part1.JPG" style="width: 140px; height: 130px;"><br>
+            <img src="./images/sec4part1-1.JPG" style="width: 140px; height: 130px;"><br>
             </a>
         </div>
         
         <div id="sec04box0102" style="border: 10px; float: left;">
             <a href="https://www.amazon.com/s?k=joggers&i=fashion-womens-intl-ship&pd_rd_r=a3b9205b-cc8b-4a75-b421-4daf2620eda4&pd_rd_w=ktOTU&pd_rd_wg=tNKS8&pf_rd_p=1db13ac4-e486-438e-a9a5-dd6867e4ea95&pf_rd_r=4MAVE29V3W1KHPQ0W6PW&ref=pd_gw_unk">
-            <img src="./images/sec4pic2part1.JPG" style="width: 140px; height: 130px;"><br>
+            <img src="./images/sec4part1-2.JPG" style="width: 140px; height: 130px;"><br>
             </a>
         </div>
         
         <div id="sec04box0103" style="border: 10px; float: left;">
             <a href="https://www.amazon.com/s?k=cardigans&i=fashion-womens-intl-ship&pd_rd_r=a3b9205b-cc8b-4a75-b421-4daf2620eda4&pd_rd_w=ktOTU&pd_rd_wg=tNKS8&pf_rd_p=1db13ac4-e486-438e-a9a5-dd6867e4ea95&pf_rd_r=4MAVE29V3W1KHPQ0W6PW&ref=pd_gw_unk">
-            <img src="./images/sec4pic3part1.JPG" style="width: 140px; height: 130px;"><br>
+            <img src="./images/sec4part1-3.JPG" style="width: 140px; height: 130px;"><br>
             </a>
         </div>
         
         <div id="sec04box0104" style="border: 10px; float: left;">
             <a href="https://www.amazon.com/s?k=tees&i=fashion-womens-intl-ship&pd_rd_r=a3b9205b-cc8b-4a75-b421-4daf2620eda4&pd_rd_w=ktOTU&pd_rd_wg=tNKS8&pf_rd_p=1db13ac4-e486-438e-a9a5-dd6867e4ea95&pf_rd_r=4MAVE29V3W1KHPQ0W6PW&ref=pd_gw_unk">
-            <img src="./images/sec4pic4part1.JPG" style="width: 140px; height: 130px;"><br>
+            <img src="./images/sec4part1-4.JPG" style="width: 140px; height: 130px;"><br>
             </a>
         </div>
         <a href="https://www.amazon.com/gp/browse.html?node=16225018011&pf_rd_r=4MAVE29V3W1KHPQ0W6PW&pf_rd_p=1db13ac4-e486-438e-a9a5-dd6867e4ea95&pd_rd_r=a3b9205b-cc8b-4a75-b421-4daf2620eda4&pd_rd_w=ktOTU&pd_rd_wg=tNKS8&ref_=pd_gw_unk">
@@ -572,21 +575,28 @@
 
     <div id="sec04box02" style="border: 10px; float: left; ">
         <h4><b>Shop Laptops & Tablets</b></h4>
-        <img src="./images/sec1pic10.JPG" style="width: 280px; height: 330px;"><br>
+        <a href="https://www.amazon.com/s?bbn=16225007011&rh=n%3A16225007011%2Cn%3A13896617011&dc&fst=as%3Aoff&pd_rd_r=ef6a64fa-7b9b-41b8-9d0c-8f2f39640163&pd_rd_w=fYopd&pd_rd_wg=aHEoz&pf_rd_p=f95a41bf-1f82-4fca-9b37-32faaf59dd61&pf_rd_r=7MEYN0HSSZ9FM1XXE3HZ&qid=1602294815&rnid=16225007011&ref=pd_gw_unk">
+        <img src="./images/sec4pic2.JPG" style="width: 280px; height: 330px;"><br>
         <h5>See more</h5>
+        </a>
     </div>
 
     <div id="sec04box03" style="border: 10px; float: left; ">
         <h4><b>Explore home bedding</b></h4>
-        <img src="./images/sec1pic11.JPG" style="width: 280px; height: 330px;"><br>
+        <a href="https://www.amazon.com/s?k=Home+bedding&i=kitchen-intl-ship&pd_rd_r=ef6a64fa-7b9b-41b8-9d0c-8f2f39640163&pd_rd_w=poZKb&pd_rd_wg=aHEoz&pf_rd_p=16ffc777-bfb6-4b2f-a079-eed4114eff9e&pf_rd_r=7MEYN0HSSZ9FM1XXE3HZ&ref=pd_gw_unk">
+        <img src="./images/sec4pic3.JPG" style="width: 280px; height: 330px;"><br>
         <h5>See more</h5>
+        </a>
     </div>
 
     <div id="sec04box04" style="border: 10px; float: left; ">
         <h4><b>Create with strip lights</b></h4>
-        <img src="./images/sec1pic12.JPG" style="width: 280px; height: 330px;"><br>
+        <a href="https://www.amazon.com/s?k=strip+lighting&pd_rd_r=ef6a64fa-7b9b-41b8-9d0c-8f2f39640163&pd_rd_w=nvULw&pd_rd_wg=aHEoz&pf_rd_p=38228efa-5278-4c08-9c74-2a33c1be7ce5&pf_rd_r=7MEYN0HSSZ9FM1XXE3HZ&ref=pd_gw_unk">
+        <img src="./images/sec4pic4.JPG" style="width: 280px; height: 330px;"><br>
         <h5>Shop Now</h5>
+        </a>
     </div>
+    &nbsp;&nbsp;
 </div>
 
 
@@ -599,7 +609,7 @@
 
     <div id="bgcolor1">
         <a>
-            <img src="./images/bgcolor1.PNG" style="width: 2000px; height: 400px; z-index: 0;">
+            <img src="./images/bgcolor1.PNG" style="width: 1400px; height: 400px; z-index: 0;">
         </a>
     </div>
 
@@ -733,7 +743,7 @@
 
     <div id="bgcolor2">
         <a>
-            <img src="./images/bgcolor2.PNG" style="width: 2000px; height: 550px; z-index: 0;">
+            <img src="./images/bgcolor2.PNG" style="width: 1520px; height: 550px; z-index: 0;">
         </a>
     </div>
 
