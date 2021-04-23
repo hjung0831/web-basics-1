@@ -2,6 +2,5 @@
 new Swiper('.myswiper', {
 
 	// 슬라이드 속도 설정, 아무것도 없을 시 기본값은 300
-	speed : 1000,
-
+	speed : 500,
 });
