@@ -13,6 +13,7 @@ body{
 	width:600px;
 	height:400px;
 }
+
 .swiper-slide {
 	text-align:center;
 	display:flex; /* 내용을 중앙정렬 하기위해 flex 사용 */
@@ -184,13 +185,13 @@ select {
 	background: transparent;
 	border: none;
 	padding: 6px 12px;
-  }
+}
 
 button {
 	padding: 6px 12px;
 	background: transparent;
 	border: none;
-  }
+}
 
 .input-group-addon {
 	padding: 0!important;

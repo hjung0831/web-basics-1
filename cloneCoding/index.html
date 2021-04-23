@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-	<meta charset="utf-8">
-	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-	<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <title> Amazon.com: Online Shopping </title>
     <link rel="icon" href="favicon.ico" />
 
@@ -17,6 +12,7 @@
 <link rel="stylesheet" href="./css/main.css">
 
 <!-- 헤더 스타일 지정 -->
+<!-- 상단의 스타일-top_box로, 하단의 스타일은 bottom_box로 둔다 -->
 <style>
     .top_box {
         width: 100%;
@@ -35,7 +31,8 @@
         }
 </style>
 
-<!-- HEADER, 상단과 하단 -->
+<!-- HEADER -->
+<!-- 상단과 하단을 구분 -->
 <header>
     <!-- 헤더의 상단 -->
     <font color="white">
@@ -65,7 +62,7 @@
 
         <!-- 검색창 -->
         <!-- 체크박스, input박스, button으로 검색창을 만든다. 이때 체크박스 안에 품목들이 나열되도록 한다
-        스타일시트를 불러와 여백을 바꾸는 등 아마존의 검색창과 비슷하게 보이도록 한다. -->
+        스타일시트를 불러와 여백을 바꾸고 아마존의 검색창과 비슷하게 보이도록 한다. -->
         <div id="searchbox">
             <link href="https://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet" />
             <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
@@ -359,7 +356,8 @@
 
     <!-- SECTION 2, 8개의 레이아웃 -->
     <!--하나의 박스는 설명과, 하이퍼링크가 탑재된 이미지와 설명으로 이루어져 있음 
-        8개의 레이아웃 중 두 번째 줄의 세 번째 박스은 다시 4개의 구역으로 나누어져 있음-->
+    8개의 레이아웃 중 두 번째 줄의 세 번째 박스은 다시 4개의 구역으로 나누어져 있음
+    이에 따른 div 속성을 각각 다르게 지정-->
     <div class="section02">
         <div id="sec02box01" style="border: 10px; float: left; ">
             <h4><b>Find your ideal</b></h4>
@@ -518,7 +516,7 @@
                     
             <!-- 슬라이드 스크립트를 지정해준다. 슬라이드 화면을 가운데로 설정해주고
             slidesPerView를 5로 설정해 한 화면에 슬라이드 5개가 보여지도록 한다
-            그리고 슬라이드가 보여지는 모습을 style type으로 꾸며본다-->
+            그리고 슬라이드가 보여지는 모습을 style type text/css로 꾸민다-->
             <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
             <script>
                 var swiper = new Swiper('.swiper-container2', {
@@ -612,8 +610,8 @@
         <b>Back to top</b><br><br>
     </div>
 
-    <!-- FOOTER - SECTION01
-        bg이미지 포지션을 relative으로 고정시켜 배경 이미지를 만들고, 그 위에 FOOTER - SECTION01을 넣는다 -->
+    <!-- FOOTER - SECTION01 -->
+    <!-- bg이미지 포지션을 relative으로 고정시켜 배경 이미지를 만들고, 그 위에 FOOTER - SECTION01을 넣는다 -->
     <div id="bgcolor1">
         <a>
             <img src="./images/bgcolor1.PNG" style="width: 1400px; height: 400px; z-index: 0;">
@@ -748,8 +746,8 @@
         </div>
     </div>
 
-    <!--FOOTER - SECTION02 
-        위와 마찬가지로 bg이미지 포지션을 relative으로 고정시켜 배경 이미지를 만들고, 그 위에 FOOTER - SECTION02를 넣는다 -->
+    <!-- FOOTER - SECTION02 -->
+    <!-- 위와 마찬가지로 bg이미지 포지션을 relative으로 고정시켜 배경 이미지를 만들고, 그 위에 FOOTER - SECTION02를 넣는다 -->
     <div id="bgcolor2">
         <a>
             <img src="./images/bgcolor2.PNG" style="width: 1520px; height: 550px; z-index: 0;">
@@ -778,7 +776,8 @@
         <br><br><br><br><br>
     </div>
 
-    <!-- FOOTER - SECTION03, 아마존의 레이아웃은 가로 7칸, 세로 7칸으로 구성되어 있다
+    <!-- FOOTER - SECTION03 -->
+    <!-- 푸터 섹션 3의 레이아웃은 가로 7칸, 세로 7칸으로 구성되어 있다
     div 클래스 하나를 FOOTER - SECTION (숫자) 로 두고, 그 아래에 5개의 품목씩 나열되도록 코드를 짰다 -->
     <div class="footer-section03" style="font-size: 2px;">
         <div id="fs03-01">
@@ -1033,7 +1032,8 @@
         </div>
     </div>
 
-    <!-- FOOTER - SECTION04, 저작권 외 여러 설명들 추가 -->
+    <!-- FOOTER - SECTION04 -->
+    <!-- 저작권 외 여러 설명들 추가 -->
     <div class="footer-section04">
         <a style="color: white;" href="https://www.amazon.com/gp/help/customer/display.html?nodeId=508088&ref_=footer_cou">
             Conditions of Use
